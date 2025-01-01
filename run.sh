@@ -29,7 +29,9 @@ cd build
 if [ ! -f ./llama2_q4 ]; then
   echo "Setup Error - review output above."
 else
-  ./llama2_q4 ./llama2-7b-awq-q4.bin -n $STEPS -t $TEMP -p $SAMP -f ../$file >../$OUTPUT
+  MODEL="llama2-7b-awq-q4.bin"
+  echo "Running $MODEL with n=$STEPS t=$TEMP p=$SAMP f=$file..."
+  ./llama2_q4 $MODEL -n $STEPS -t $TEMP -p $SAMP -f ../$file >../$OUTPUT
 fi
 cd ../
 cat $OUTPUT
