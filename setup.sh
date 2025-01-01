@@ -24,4 +24,12 @@ fi
 if [ ! -d ./output ]; then
   /opt/exopy/bin/python3 convert_awq_to_bin.py pytorch_model.bin output
 fi
+if [ ! -f ./build/llama2-7b-awq-q4.bin ]; then
+  cd build
+  ./weight_packer ../config.json ../output llama2-7b-awq-q4.bin 1
+  cd ..
+fi
+if [ ! -f ./build/tokenizer.bin ]; then
+  cp tokenizer.bin build/tokenizer.bin
+fi
 echo "Ready."
