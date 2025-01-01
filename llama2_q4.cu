@@ -175,7 +175,7 @@ int checkpoint_init_weights(TransformerWeights* w, Config* p, FILE* f) {
     scratch_size *= sizeof(half);
     void* scratchCpu = malloc(scratch_size);
 
-    printf("\nLoading Weights... ");
+    //printf("\nLoading Weights... ");
 
     readWeight(w->token_embedding_table, f, p->vocab_size * p->dim * sizeof(half), scratchCpu);
     readWeight(w->wcls, f, p->vocab_size * p->dim * sizeof(half), scratchCpu);
@@ -196,7 +196,7 @@ int checkpoint_init_weights(TransformerWeights* w, Config* p, FILE* f) {
         readWeight(w->layers[i].rms_ffn_weight, f, p->dim * sizeof(half), scratchCpu);
     }
 
-    printf("done!\n");
+    //printf("done!\n");
     free(scratchCpu);
     return 0;
 }
@@ -413,8 +413,8 @@ void build_transformer(Transformer* t, char* checkpoint_path, bool perplexity) {
     // read in the config header
     if (fread(&t->config, sizeof(Config), 1, file) != 1) { printf("Invalid header size\n");  exit(1); }
     // Dump model config
-    printf("\nModel params:- \ndim: %d \nhidden_dim: %d\nn_heads: %d\nn_kv_heads: %d\nn_layers: %d\nseq_len: %d\nvocab_size: %d\nrope_theta: %g\n",
-        t->config.dim, t->config.hidden_dim, t->config.n_heads, t->config.n_kv_heads, t->config.n_layers, t->config.seq_len, t->config.vocab_size, t->config.rope_theta);
+    //printf("\nModel params:- \ndim: %d \nhidden_dim: %d\nn_heads: %d\nn_kv_heads: %d\nn_layers: %d\nseq_len: %d\nvocab_size: %d\nrope_theta: %g\n",
+    //    t->config.dim, t->config.hidden_dim, t->config.n_heads, t->config.n_kv_heads, t->config.n_layers, t->config.seq_len, t->config.vocab_size, t->config.rope_theta);
 
     // read in the Transformer weights
     malloc_weights(&t->weights, &t->config);
@@ -441,9 +441,9 @@ void generate(Transformer* transformer, Tokenizer* tokenizer, Sampler* sampler, 
     int num_prompt_tokens = 0;
     int* prompt_tokens = (int*)malloc((strlen(prompt) + 3) * sizeof(int)); // +3 for '\0', ?BOS, ?EOS
 
-    printf("\nEncoding Prompt... ");   // Encoding can take a long time, print a message to show progress
+    //printf("\nEncoding Prompt... ");   // Encoding can take a long time, print a message to show progress
     encode(tokenizer, prompt, 1, 0, prompt_tokens, &num_prompt_tokens);
-    printf("Done!\n");
+    //printf("Done!\n");
 
     if (num_prompt_tokens < 1) {
         fprintf(stderr, "something is wrong, expected at least 1 prompt token\n");
@@ -561,7 +561,7 @@ void chat(Transformer* transformer, Tokenizer* tokenizer, Sampler* sampler,
                 sprintf(rendered_prompt, user_template, user_prompt);
             }
 
-            printf("\nRendered prompt: %s\n", rendered_prompt); // Ankan - test!
+            //printf("\nRendered prompt: %s\n", rendered_prompt); // Ankan - test!
 
             // encode the rendered prompt into tokens
             encode(tokenizer, rendered_prompt, 1, 0, prompt_tokens, &num_prompt_tokens);

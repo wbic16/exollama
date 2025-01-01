@@ -34,5 +34,5 @@ else
   ./llama2_q4 $MODEL -n $STEPS -t $TEMP -p $SAMP -f ../$file >../$OUTPUT
 fi
 cd ../
-cat $OUTPUT
+./render.sh
 ls -l $OUTPUT

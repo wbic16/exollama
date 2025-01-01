@@ -8,3 +8,4 @@ pytorch_model.bin
 *.bak
 .sq/*
 *.history
+*.phext
