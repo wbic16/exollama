@@ -18,7 +18,7 @@ if [ ! -f $file ]; then
   echo "You should store your prompt in $file and try again."
   exit 1
 fi
-PROMPT_BYTES=`wc --bytes $file`
+PROMPT_BYTES=`wc --bytes $file |sed 's/ .*$//g'`
 PROMPT_STEPS=$((4*$PROMPT_BYTES))
 STEPS=$(($STEPS + $PROMPT_STEPS))
 cd build
