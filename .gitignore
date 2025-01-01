@@ -1,3 +1,5 @@
 build/*
+output/*
 config.json
 pytorch_model.bin
+.pip*

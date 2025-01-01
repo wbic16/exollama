@@ -17,4 +17,11 @@ fi
 if [ ! -f config.json ]; then
   wget https://huggingface.co/abhinavkulkarni/meta-llama-Llama-2-7b-chat-hf-w4-g128-awq/resolve/main/config.json
 fi
+if [ ! -f .pip-numpy-torch-verified ]; then
+  /opt/exopy/bin/pip install numpy torch
+  touch .pip-numpy-torch-verified
+fi
+if [ ! -d ./output ]; then
+  /opt/exopy/bin/python3 convert_awq_to_bin.py pytorch_model.bin output
+fi
 echo "Ready."
