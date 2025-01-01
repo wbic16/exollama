@@ -6,3 +6,5 @@ config.json
 pytorch_model.bin
 .pip*
 *.bak
+.sq/*
+*.history
