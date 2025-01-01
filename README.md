@@ -3,6 +3,18 @@
 Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models
 
 Based on [llama2.c](https://github.com/karpathy/llama2.c)
+Forked from [llama2_q4.cu](https://github.com/ankan-ban/llama_cu_awq)
+
+## One-Step Setup
+
+The instructions below still apply, but you can execute all of them in one shot with `setup.sh` on Ubuntu 22.04 LTS with an NVidia GPU.
+
+After you've completed setup, use run.sh to run your prompts through your new LLM!
+
+```
+./setup.sh
+./run.sh "Hello World"
+```
 
 ## Build
 
@@ -53,9 +65,12 @@ python3 convert_awq_to_bin.py pytorch_model-00001-of-00003.bin output
 python3 convert_awq_to_bin.py pytorch_model-00002-of-00003.bin output
 python3 convert_awq_to_bin.py pytorch_model-00003-of-00003.bin output
 
+cd build
+cp ../weight_packer weight_packer
 ./weight_packer config.json output llama2-13b-awq-q4.bin 1
 
 ./llama2_q4 llama2-13b-awq-q4.bin -n 256 -i "write an essay about GPUs"
+cd ..
 ```
 Note: the last argument of weight_packer is used to indicate whether the awq weights are using old packing format (that need repacking). If you use latest AWQ repo from github, it will generate weights in new packing format. The weights at https://huggingface.co/abhinavkulkarni/ are still using old format so we are setting the param to 1 above.
 
