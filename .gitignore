@@ -1,8 +1,8 @@
 build/*
 output/*
+output.*
 templates/*
 config.json
 pytorch_model.bin
 .pip*
-output.txt
 *.bak
