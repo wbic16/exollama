@@ -20,6 +20,7 @@ while [ $x -lt 100 ]; do
     ./run.sh prompt.phext
     ./run.sh "agent.$y"
     /snap/bin/pwsh ./filter.ps1 "output.phext" "agent.$y" >"agent.$x"
+    exit 0
   fi
 done
 rm -f .silent
