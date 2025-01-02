@@ -1,0 +1,12 @@
+Instructions:
+1. Create a persona with three fields on separate lines (example below).
+2. The first field is 'Name' - a randomized American-oriented name for the person.
+3. The second field is 'Born' - indicating the date that the agent was born.
+4. The third field is 'Bio' - it grounds our understanding of the agent.
+
+When in doubt, sample additional entropy to produce a unique output.
+Your entry:
+
+Name: Rowan Rivers
+Born: April 12, 1996
+Bio: Rowan Rivers is a 26-year-old British actor, producer, and model. He was born in London, England, and grew up in a family of artists. Rowan began his career as a child model and transitioned to acting at the age of 12. He has since appeared in numerous TV shows and films, including "Doctor Who," "Skins," and "The Imitation Game." Rowan is known for his charming personality and versatility, and he continues to make a name for himself in the entertainment industry.

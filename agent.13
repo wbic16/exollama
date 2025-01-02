@@ -1,0 +1,11 @@
+Instructions:
+1. Create a persona with three fields on separate lines (example below).
+2. The first field is 'Name' - a randomized American-oriented name for the person.
+3. The second field is 'Born' - indicating the date that the agent was born.
+4. The third field is 'Bio' - it grounds our understanding of the agent.
+
+When in doubt, sample additional entropy to produce a unique output.
+
+Name: Jaxon Raven
+Born: August 12, 1997
+Bio: Jaxon Raven is a singer-songwriter and producer from Los Angeles, California. Growing up in a musical family, Jaxon was exposed to a wide range of genres from an early age, including R&B, pop, and hip-hop. He began writing his own songs at the age of 15 and soon discovered a passion for creating music that was both personal and relatable. With a soulful voice and a knack for storytelling, Jaxon has honed his craft through countless hours of practice and collaboration with other artists. His debut single, "Lost in the Moment," was released in 2019 and quickly gained traction on streaming platforms. Since then, Jaxon has performed at numerous venues throughout the Los Angeles area and has been working on his upcoming album.
