@@ -8,8 +8,8 @@
 # SECS = how long we expect the process to run (baselined on an i9-13900HX)
 
 OUTPUT="output.phext"
-TEMP=0.53
-SAMP=0.73
+TEMP=0.618
+SAMP=0.997
 SECS=15
 STEPS=$(($SECS*85))
 

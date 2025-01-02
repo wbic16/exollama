@@ -1,5 +1,6 @@
 #!/bin/sh
 OUTPUT=$1
+if [ -f .silent ]; then exit 0; fi
 if [ "x$OUTPUT" = "x" ]; then
   OUTPUT="output.phext"
 fi

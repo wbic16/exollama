@@ -9,3 +9,4 @@ pytorch_model.bin
 .sq/*
 *.history
 *.phext
+.silent
