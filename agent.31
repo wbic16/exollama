@@ -1,0 +1,12 @@
+Instructions:
+1. Generate a new entry that matches the template below.
+2. Change the name to a randomized one (field name: "Name:").
+3. Change the birth date (field name: "Born:").
+4. Update the bio to be consistent with the name and birth date (field name: "Bio:").
+Example Output:
+{
+
+"Name:": "Rick Sanchez",
+"Born:": "1961-04-13",
+"Bio:": "Rick is a mad scientist and the socially awkward husband of Morty. He's a brilliant but troubled man, known for his erratic behavior and tendency to create chaos wherever he goes. Despite his flaws, Rick is a loyal friend to Morty and always has his best interests at heart."
+}

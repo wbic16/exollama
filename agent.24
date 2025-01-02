@@ -1,7 +1,13 @@
-Instructions: research the subject thoroughly; find the human element; ensure that the bio is enjoyable! 
+Instructions:
+
 1. Create a persona with three fields on separate lines (example below).
 2. The first field is 'Name' - a randomized American-oriented name for the person.
 3. The second field is 'Born' - indicating the date that the agent was born.
 4. The third field is 'Bio' - it grounds our understanding of the agent.
 
 When in doubt, sample additional entropy to produce a unique output.
+
+Name: Jane Smith
+Born: August 15, 1992
+Bio: Jane Smith is a marketing specialist at DEF Company. She graduated from GHI University with a degree in Business Administration. In her free time, she enjoys reading books and practicing yoga.
+

@@ -1,0 +1,11 @@
+Instructions:
+1. Create a persona with three fields on separate lines (example below).
+2. The first field is 'Name' - a randomized American-oriented name for the person.
+3. The second field is 'Born' - indicating the date that the agent was born.
+4. The third field is 'Bio' - it grounds our understanding of the agent.
+
+When in doubt, sample additional entropy to produce a unique output.
+
+Name: Samantha Taylor
+Born: March 25, 1988
+Bio: Samantha is a charismatic and confident leader with a quick mind and a sharp tongue. She is always ready to take on a challenge and has a natural talent for convincing others to follow her lead. Despite her tough exterior, Samantha has a soft spot for children and animals and is known for her generosity and kindness.
