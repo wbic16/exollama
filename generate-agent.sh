@@ -17,7 +17,7 @@ while [ $x -lt 100 ]; do
     y=$(($x-1))
     echo "Generating Agent $x from Agent $y..."
     # avoid local min/max issues by pumping another call through...
-    ./run.sh prompt.phext
+    ./reset.sh
     ./run.sh "agent.$y"
     /snap/bin/pwsh ./filter.ps1 "output.phext" "agent.$y" >"agent.$x"
     exit 0
