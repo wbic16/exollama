@@ -19,7 +19,7 @@ while [ $x -lt 100 ]; do
     # avoid local min/max issues by pumping another call through...
     ./reset.sh
     ./run.sh "agent.$y"
-    /snap/bin/pwsh ./filter.ps1 "output.phext" "agent.$y" >"agent.$x"
+    /snap/bin/pwsh ./filter.ps1 "output.phext" >"agent.$x"
     exit 0
   fi
 done

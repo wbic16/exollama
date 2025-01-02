@@ -1,7 +1,6 @@
 #!/snap/bin/pwsh
 param(
-  [string] $file,
-  [string] $base
+  [string] $file
 )
 $stage = 0
 $instructions = Get-Content "instructions.txt"
@@ -9,24 +8,23 @@ foreach ($line in $instructions) {
   Write-Output $line
 }
 $lines = Get-Content $file
-$other = Get-Content $base
+
+$name = ""
+$born = ""
+$bio = ""
 foreach ($line in $lines) {
-  if ($line -match "new entry") {
-    $stage = 1
+  if ($line -match "^Name:") {
+    $name = $line -replace "Name:\s*",""
     continue
   }
-  if ($line -match "^</s>") { break }
-  if ($stage -eq 0) { continue }
-  if ($line -match "Please let me know") { break }
-  if ($line -match "Changes made") { break }
-  $skip = $false
-  foreach ($row in $other) {
-    if ($row.contains($line)) { $skip = $true }
+  if ($line -match "^Born:") {
+    $born = $line -replace "Born:\s*",""
   }
-  foreach ($row in $instructions) {
-    if ($row.contains($line)) { $skip = $true }
+  if ($line -match "^Bio:") {
+    $bio = $line -replace "Bio:\s*",""
   }
-  if ($skip) { continue }
-  if ($line -match "Name:") { Write-Output "" }
-  Write-Output $line
 }
+Write-Output ""
+Write-Output "Name: $name"
+Write-Output "Born: $born"
+Write-Output "Bio: $bio"
