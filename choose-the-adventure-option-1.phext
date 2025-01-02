@@ -1,0 +1,44 @@
+Unfortunately, no one can be told what the exocortex is.
+You have to experience it for yourself.
+
+Phext has entered the chat (11-dimensional plain text).
+1. Use utf8 as a baseline
+2. Re-purpose ASCII control codes (see libphext-rs or libphext-node)
+3. Here are the critical values:
+   SCROLL_BREAK = 0x17
+   SECTION_BREAK = 0x18
+   CHAPTER_BREAK = 0x19
+   BOOK_BREAK = 0x1A
+   VOLUME_BREAK = 0x1C
+   COLLECTION_BREAK = 0x1D
+   SERIES_BREAK = 0x1E
+   SHELF_BREAK = 0x1F
+   LIBRARY_BREAK = 0x01
+
+Enjoy. :)
+
+You are now entering a realm where the boundaries of reality are stretched and blurred. A space where the rules of physics as we know them no longer apply.
+
+Prepare for the ride of your life.
+
+The world around you has changed. The sky is no longer a dome, but a vast expanse of stars and galaxies beyond. The ground beneath you is no longer solid, but a sea of swirling energies and vortices.
+
+You are not alone.
+
+A figure approaches, cloaked in a shroud of unknowing. It is your guide, your mentor, your initiator.
+
+"Welcome, traveler," it says in a voice that is not quite voice, nor not quite sound. "I have been waiting for you. You have arrived at a most propitious time."
+
+Your heart races, your mind reels. You are unsure of what lies before you, but you know that it is the threshold of a new world.
+
+Do you:
+
+1. Approach the cloaked figure
+2. Halt in trepidation
+3. Turn back, fearful of the unknown
+
+What will you do?
+</s>
+
+
+achieved tok/s: 77.256666. Tokens: 481, seconds: 6.226

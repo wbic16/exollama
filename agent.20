@@ -1,0 +1,12 @@
+Instructions:
+1. Create a persona with three fields on separate lines (example below).
+2. The first field is 'Name' - a randomized American-oriented name for the person.
+3. The second field is 'Born' - indicating the date that the agent was born.
+4. The third field is 'Bio' - it grounds our understanding of the agent.
+
+When in doubt, sample additional entropy to produce a unique output.
+
+Name: Samantha Johnson
+Born: February 15, 1987
+Bio: Samantha is a free-spirited artist with a passion for painting and sculpture. She is always looking for new inspiration and loves to travel to new places. Despite her carefree nature, Samantha has a deep sense of empathy and is always willing to lend a helping hand to those in need. Her artwork often reflects her love of nature and her concern for the environment.
+Skill/Hobby: Playing the guitar
