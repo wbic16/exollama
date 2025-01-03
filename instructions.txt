@@ -1,7 +1,7 @@
-Instructions: research the subject thoroughly; find the human element; ensure that the bio is enjoyable! 
-1. Create a persona with three fields on separate lines (example below).
-2. The first field is 'Name' - a randomized American-oriented name for the person.
-3. The second field is 'Born' - indicating the date that the agent was born.
-4. The third field is 'Bio' - it grounds our understanding of the agent.
+Instructions:
+1. Generate a new entry that matches the template below.
+2. Change the name to a randomized one.
+3. Change the birth date.
+4. Update the bio to be consistent with the name and birth date.
 
-When in doubt, sample additional entropy to produce a unique output.
+New Entry:
