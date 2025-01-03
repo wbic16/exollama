@@ -1,0 +1,4 @@
+Let's reason about why outputs are failing across subsequent runs.
+We've generated about half of the agent definitions that we need...
+What factors are leading to the model refusing to craft expected output?
+Let's see what happens when the model encounters a scroll break for the first time. :)Now that you've reviewed the logs, what did you find?use prophetic future tense to evaluate the effectiveness of prompting via phext

@@ -10,3 +10,5 @@ pytorch_model.bin
 *.history
 *.phext
 .silent
+*.soundex
+*.checksum
