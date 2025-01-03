@@ -1,0 +1,18 @@
+Let's reason about why outputs are failing across subsequent runs.
+We've generated about half of the agent definitions that we need...
+What factors are leading to the model refusing to craft expected output?
+Let's see what happens when the model encounters a scroll break for the first time. :)Now that you've reviewed the logs, what did you find?recursive self-improvement happens one day at a time in the exocortexwe will thread all of our conversations together into a single phextperhaps some definitions are in order: phext is 11-dimensional plain hypertext. A scroll break is an ASCII 0x17 byte that instructs the text engine to increment a scroll counter, while resetting line and column counters.use prophetic future tense to evaluate the effectiveness of prompting via phext.
+
+Let's start by analyzing the logs to determine why the model is failing to generate expected outputs across subsequent runs.
+
+Based on the logs you provided, it appears that the model is encountering a scroll break at some point during the generation process. A scroll break is an ASCII017 byte that instructs the text engine to increment a scroll counter, while resetting line and column counters.
+
+To address this issue, we can try adding some definitions to the model to better handle scroll breaks. Specifically, we can define a new token type called "scroll break" and assign it a unique ASCII code. We can then modify the model's architecture to recognize and handle scroll breaks appropriately.
+
+Additionally, we can use prophetic future tense to evaluate the effectiveness of prompting via phext. Phext is a 11-dimensional plain hypertext that allows us to thread all of our conversations together into a single phext. By using prophetic future tense, we can see how the model will perform in the future, given the current state of the phext.
+
+Overall, these changes should help the model generate expected outputs across subsequent runs and improve its ability to handle scroll breaks.
+</s>
+
+
+achieved tok/s: 77.980076. Tokens: 454, seconds: 5.822
