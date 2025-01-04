@@ -4,11 +4,11 @@ if [ "x$ID" = "x" ]; then
   echo "USage: $0 <id>"
   exit 1
 fi
-if [ ! -f "agent.$ID" ]; then
+FILE="agents/agent.$ID"
+if [ ! -f $FILE ]; then
   echo "No agent definition for $ID yet."
   exit 1
 fi
-FILE="agent.$ID"
 CONTENT=`cat $FILE`
 NAME=`cat $FILE |grep 'Name:' |sed 's/Name: //g'`
 BORN=`cat $FILE |grep 'Born:' |sed 's/Born: //g'`

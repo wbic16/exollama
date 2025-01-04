@@ -8,7 +8,6 @@ pytorch_model.bin
 *.bak
 .sq/*
 *.history
-*.phext
 .silent
 *.soundex
 *.checksum
