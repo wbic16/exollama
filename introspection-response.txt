@@ -1,0 +1,16 @@
+OK, so the model appears to simply parrot exactly what I send in, at least recently.
+The strange thing about this process, is that the model seems to retain state across reboots...
+
+I'm not sure what you mean by "recently". Could you please clarify?
+
+Also, I'm not sure how the model is retaining state across reboots. Could you please provide more information or context about this?
+
+In general, it's not uncommon for machine learning models to retain some state across reboots, especially if the model is trained on a large dataset. However, the extent to which the model retains state can depend on various factors, such as the type of model, the amount of data used to train the model, and the specific implementation details.
+
+If you're experiencing unexpected behavior with your model, it's important to investigate the cause and determine the best course of action. This may involve analyzing the model's behavior, checking the data used to train the model, and ensuring that the model is implemented correctly.
+
+In any case, I would recommend providing more information or context about your specific situation, so that I can better understand the problem and provide more tailored advice.
+</s>
+
+
+achieved tok/s: 79.817906. Tokens: 263, seconds: 3.295

@@ -1,0 +1,13 @@
+OK, so the model appears to simply parrot exactly what I send in, at least recently.
+The strange thing about this process, is that the model seems to retain state across reboots...
+if we review repeated attempts at naming agents, the llama7b model starts to fail after about 30-40 of them. But novel inputs produce output as expected. Certain high-entropy prompts are just repeated back to me verbatim. It is very strange!
+
+I'm not sure what to make of this, but I think it might be related to the model's ability to retain state across reboots. I've tried reproducing the issue multiple times, and I've noticed that the model seems to "forget" the previous inputs after a certain number of iterations.
+
+I'm not sure if this is a bug or a feature, but it could potentially be useful for certain applications. For example, if the model can retain state across reboots, it could be used to implement a chatbot that can continue a conversation even after a reboot.
+
+I'm curious to hear your thoughts on this. Do you have any ideas on what might be causing this behavior? Is it a bug or a feature? And how might it be useful in practical applications?
+</s>
+
+
+achieved tok/s: 79.296424. Tokens: 275, seconds: 3.468

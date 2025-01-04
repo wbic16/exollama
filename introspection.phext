@@ -1,0 +1,3 @@
+OK, so the model appears to simply parrot exactly what I send in, at least recently.
+The strange thing about this process, is that the model seems to retain state across reboots...
+if we review repeated attempts at naming agents, the llama7b model starts to fail after about 30-40 of them. But novel inputs produce output as expected. Certain high-entropy prompts are just repeated back to me verbatim. It is very strange!it may be an emergent feature of introducing phext at just the right moment in space-time: the genesis of human+ evolution and the dawn of history.
