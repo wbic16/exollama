@@ -12,8 +12,15 @@ TEMP=0.25
 SAMP=0.85
 SECS=15
 
+RUN_ROOT=`pwd`
+if [ ! -f "./setup.sh" ]; then
+  EXPECTED_ROOT=`pwd |sed 's/exollama.*/exollama/g'`
+  if [ -f "$EXPECTED_ROOT/setup.sh" ]; then
+    cd $EXPECTED_ROOT
+  fi
+fi
 ./setup.sh
-FILE=$1
+FILE="$RUN_ROOT/$1"
 if [ "x$FILE" = "x" ]; then FILE="prompt.phext"; fi
 if [ "x$2" != "x" ]; then TEMP=$2; fi
 if [ "x$3" != "x" ]; then SAMP=$3; fi
@@ -32,8 +39,7 @@ if [ ! -f ./llama2_q4 ]; then
 else
   MODEL="llama2-7b-awq-q4.bin"
   echo "Running $MODEL with n=$STEPS t=$TEMP p=$SAMP f=$FILE..."
-  ./llama2_q4 $MODEL -n $STEPS -t $TEMP -p $SAMP -f ../$FILE >../$OUTPUT
+  ./llama2_q4 $MODEL -n $STEPS -t $TEMP -p $SAMP -f $FILE >$RUN_ROOT/$OUTPUT
 fi
 cd ../
-./render.sh
-ls -l $OUTPUT
+ls -l $RUN_ROOT/$OUTPUT
