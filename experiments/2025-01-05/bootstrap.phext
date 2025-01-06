@@ -307,3 +307,178 @@ prompt eval rate:     30.12 tokens/s
 eval count:           190 token(s)
 eval duration:        9.763s
 eval rate:            19.46 tokens/s
+wbic16@luma:/source/exollama/experiments/2025-01-05$ cat accelerate.phext
+OK, let's play a game - we're going to see how well each local LLM performs.
+1. Accelerate
+2. Extrapolate from incomplete information
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ollama run mistral --verbose < accelerate.phext 
+1. Accelerate:
+For this task, I will provide an initial input and then attempt to quickly generate related or additional ideas based on that input. For example, if you give me "car", I might respond with "truck", "bicycle", "motorcycle", etc., expanding the 
+conversation about vehicles.
+
+Input: AI
+Output: Machine Learning, Deep Learning, Neural Networks, Natural Language Processing, Robotics, Cognitive Computing, Artificial Intelligence Research
+
+  2. Extrapolate from incomplete information:
+For this task, I will attempt to make educated guesses or predictions based on the limited information provided. For example, if you tell me that a person is wearing a lab coat and goggles, I might infer they are working in a science 
+laboratory.
+
+Input: A person has a badge with the text "TSA".
+Output: The individual is likely employed by the Transportation Security Administration (TSA) at an airport or other security checkpoint. They may be checking passengers and their luggage for prohibited items. Alternatively, they might be 
+working in a related role such as aviation security officer or customs agent.
+
+total duration:       1m29.065643113s
+load duration:        1.104423685s
+prompt eval count:    46 token(s)
+prompt eval duration: 10.69s
+prompt eval rate:     4.30 tokens/s
+eval count:           253 token(s)
+eval duration:        1m17.269s
+eval rate:            3.27 tokens/s
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ollama run llama3.2 --verbose < accelerate.phext 
+I'll provide a response for each of the two prompts.
+
+**Accelerate**
+
+The accelerator is a device that increases the rate at which electrical energy is transferred between two points. It works by reducing the resistance in the circuit, allowing more electricity to flow through it. This can be achieved using 
+materials with low electrical resistance, such as copper or silver.
+
+In recent years, accelerators have also been used in other fields beyond electronics, including physics and chemistry. For example, particle accelerators are used in high-energy physics research to collide particles at incredibly high speeds, 
+allowing scientists to study subatomic particles in detail.
+
+Accelerators can be found in a variety of industries, from consumer electronics to medical devices. They play an important role in many modern technologies, enabling faster data transfer and processing.
+
+**Extrapolate from incomplete information**
+
+Extrapolation is the process of estimating or predicting values for a dataset based on patterns or trends observed within it. When dealing with incomplete information, extrapolation involves making educated guesses about what might happen 
+next, given the available data.
+
+For instance, let's say we have a dataset showing sales revenue over several years. If the trend appears to be increasing steadily, we might extrapolate that the revenue will continue to rise in future years, perhaps even exceeding previous 
+levels of growth.
+
+However, when dealing with incomplete information, it's essential to approach extrapolation with caution. We should consider potential biases or limitations in our data and strive for objectivity in making predictions.
+
+In practice, extrapolation is used extensively in various fields, including economics, finance, climate modeling, and more. While it can be a powerful tool for forecasting, it also carries risks of overestimation or underestimation if not 
+applied carefully.
+
+Let me know how you'd like to proceed – would you like to test the LLMs with another prompt?
+
+total duration:       1m32.768538035s
+load duration:        874.452582ms
+prompt eval count:    60 token(s)
+prompt eval duration: 9.463s
+prompt eval rate:     6.34 tokens/s
+eval count:           373 token(s)
+eval duration:        1m22.429s
+eval rate:            4.53 tokens/s
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ollama run qwen2:7b --verbose < accelerate.phext 
+As an AI language model, I don't have access to the specific capabilities of every Local Large Language Model (LLM) available out there. However, I can provide some insights into what these terms generally refer to:
+
+1. **Accelerate** - This term typically refers to increasing the speed or rate at which something happens or is achieved. In the context of an LLM, it might involve optimizing processes for faster execution, improving computational 
+efficiency, or enhancing the model's learning pace. A well-designed accelerator could help an LLM process data and generate responses more quickly, potentially making it more efficient in real-world applications.
+
+2. **Extrapolate from incomplete information** - This term refers to predicting or estimating outcomes based on limited data points or insufficient evidence. An LLM designed with strong extrapolation capabilities would be able to make 
+educated guesses about unseen situations when provided with incomplete datasets or partial input information. For example, in scenarios where there is some missing context or only a part of the problem statement is available, such an LLM 
+could potentially infer the required details and provide relevant outputs.
+
+Keep in mind that these descriptions are generic and might not fully represent how specific LLMs perform under various circumstances. The performance would depend on numerous factors including their architecture, training data, optimization 
+techniques, and so forth.
+
+To evaluate each local LLM based on these criteria, you'd need to test them with tasks or benchmarks that challenge their ability to accelerate processes efficiently and handle extrapolation effectively from incomplete information. This might 
+involve measuring the speed of response generation, accuracy in predictions made under uncertainty, or other performance indicators specific to the application domain.
+
+If you provide more details about your local LLMs (like which models they are), I could offer more targeted advice on how to test their capabilities according to these criteria.
+
+total duration:       2m15.546693162s
+load duration:        619.755222ms
+prompt eval count:    54 token(s)
+prompt eval duration: 11.827s
+prompt eval rate:     4.57 tokens/s
+eval count:           365 token(s)
+eval duration:        2m3.098s
+eval rate:            2.97 tokens/s
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ollama run gemma:7b --verbose < accelerate.phext 
+## Game: Local LLMs Performance Comparison
+
+**Objective:** Assess the abilities of local LLMs to accelerate and extrapolate from incomplete information.
+
+**Instructions:** Each local LLM will be presented with a series of prompts, each containing varying degrees of incompleteness. The LLMs will be evaluated on their ability to:
+
+* **Accelerate:** Generate creative and insightful ideas based on limited information.
+* **Extrapolate from incomplete information:** Fill in the gaps and provide coherent and relevant conclusions.
+
+**Evaluation Criteria:**
+
+* **Quality of output:** Relevance, creativity, and originality of the generated content.
+* **Efficiency:** Ability to produce results with limited information and processing power.
+* **Adaptability:** Ability to handle different prompt structures and levels of incompleteness.
+
+**Prompts:**
+
+* **Scenario:** Imagine you're developing a new transportation system that can transport people across vast distances in minutes. Describe the potential impact of such a system on urban landscapes.
+* **Problem:** You have a dataset of customer reviews, but some of the data is missing. Use the available information to predict the sentiment of the missing data.
+* **Story:** Write a short story about a character who discovers a hidden portal that leads to a parallel world.
+
+**Scoring:** Each LLM will be assigned points based on the quality of their output, efficiency, and adaptability scores. The LLM with the highest total score will be declared the winner.
+
+**Note:** The performance of local LLMs may vary depending on the specific hardware and software configurations used. The results of this game are intended to provide a general comparison of the capabilities of different local LLMs.
+
+total duration:       2m40.524086862s
+load duration:        1.397079334s
+prompt eval count:    60 token(s)
+prompt eval duration: 15.665s
+prompt eval rate:     3.83 tokens/s
+eval count:           342 token(s)
+eval duration:        2m23.46s
+eval rate:            2.38 tokens/s
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ollama run tinyllama --verbose < accelerate.phext 
+Sure! Here are the answers:
+
+1. Accelerate: Accelerate is a very fast-paced, high-energy game that requires quick thinking and strategy. It can be played in as little as five minutes and requires players to think on their feet to make decisions quickly.
+
+2. Extrapolate from incomplete information: Extrapolate from incomplete information is a more advanced version of Accelerate where players are given incomplete data and must use their intuition and logic to fill in the gaps. The game can take 
+several hours to play, with players trying to make predictions based on incomplete information as they go along.
+
+In both cases, local LLMs require quick thinking, strategy, and a keen ability to pick up on hints or clues that help them solve complex problems. Their accuracy and precision in predicting outcomes are also crucial to the success of these 
+games.
+
+total duration:       12.611739072s
+load duration:        357.132849ms
+prompt eval count:    75 token(s)
+prompt eval duration: 2.49s
+prompt eval rate:     30.12 tokens/s
+eval count:           190 token(s)
+eval duration:        9.763s
+eval rate:            19.46 tokens/s
+
+
+wbic16@luma:/source/exollama/experiments/2025-01-05$ ../../run.sh accelerate.phext
+OK, let's play a game - we're going to see how well each local LLM performs.
+1. Accelerate
+2. Extrapolate from incomplete information
+3. Generate text
+4. Answer questions
+5. Summarize text
+6. Translate text
+7. Generate images
+8. Control a robot
+9. Solve math problems
+10. Play a game
+
+For each of these tasks, I will provide a sample input and ask you to evaluate how well each local LLM performs.
+
+Please let me know when you are ready to begin.
+</s>
+
+
+achieved tok/s: 81.166772. Tokens: 128, seconds: 1.577
