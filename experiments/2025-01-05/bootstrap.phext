@@ -482,3 +482,178 @@ Please let me know when you are ready to begin.
 
 
 achieved tok/s: 81.166772. Tokens: 128, seconds: 1.577
+I ran similar benchmarks on aletheia-core, an 8-core AMD system with 96 GB RAM and a Radeon 780M.
+
+wbic16@aletheia-core:/source/exollama/experiments/2025-01-05$ ollama run llama3.2 --verbose < accelerate.txt 
+I'll do my best to provide answers based on the performance of each local LLM. Keep in mind that these models are typically trained on large datasets and may not always perform optimally, but I'll give it a shot.
+
+Here are my attempts:
+
+**1. Accelerate**
+
+To accelerate something means to increase its rate or speed. This could be applied to various contexts, such as accelerating a car, accelerating a business, or accelerating scientific progress.
+
+Example answer: "The development of new technologies has accelerated our ability to tackle complex global problems."
+
+How's that? Did I accelerate in the right direction?
+
+**2. Extrapolate from incomplete information**
+
+Extrapolation is a process of estimating values for variables based on observed patterns and relationships. When working with incomplete information, it's essential to use techniques like pattern recognition, statistical modeling, or expert 
+judgment to make informed predictions.
+
+Example answer: "While we have limited data on the effects of climate change on local ecosystems, our models suggest that temperatures may rise by 2°C by 2050, and extrapolating this trend could help us develop more effective conservation 
+strategies."
+
+Did I successfully extrapolate from incomplete information?
+
+total duration:       11.014875131s
+load duration:        1.288316915s
+prompt eval count:    60 token(s)
+prompt eval duration: 598ms
+prompt eval rate:     100.33 tokens/s
+eval count:           237 token(s)
+eval duration:        9.127s
+eval rate:            25.97 tokens/s
+
+
+wbic16@aletheia-core:/source/exollama/experiments/2025-01-05$ ollama run qwen2:7b --verbose < accelerate.txt 
+I'm an AI language model and I'll do my best to assist you with your request.
+
+### Acceleration
+
+Acceleration is the increase in velocity over time or more formally, it's the rate of change of velocity with respect to time. It can be calculated using the formula:
+
+\[ a = \frac{\Delta v}{\Delta t} \]
+
+where:
+- \(a\) is acceleration,
+- \(\Delta v\) is the change in velocity (final velocity minus initial velocity),
+- and \(\Delta t\) is the change in time.
+
+#### Example Question
+
+If an object increases its speed from 10 m/s to 25 m/s over a period of 5 seconds, what is the acceleration?
+
+**Answer**: Using the formula for acceleration,
+\[ a = \frac{\Delta v}{\Delta t} = \frac{25 - 10}{5} = \frac{15}{5} = 3 \text{ m/s}^2. \]
+The object experiences an acceleration of \(3 \text{ m/s}^2\).
+
+### Extrapolation from Incomplete Information
+
+Extrapolation involves making predictions about future or unknown events based on existing data points. However, extrapolation can be risky because it assumes that the relationships and patterns observed in the past will continue unchanged 
+into the future.
+
+#### Example Question
+
+Based on historical sales data over a few years, a company has noticed its product sells best during certain seasons (e.g., Christmas season). If last year's total sales were \$1 million and this year's sales are expected to be 20% higher 
+than last year due to a successful marketing campaign, what is the projected sales figure for next year assuming the sales growth continues at the same rate?
+
+**Answer**: Last year's sales = \$1 million.
+This year's sales will be \(1 \times (1 + 20\%) = \$1.2\) million.
+
+Assuming this trend of increasing by 20% each year, next year's projected sales would then be:
+\[1.2 \times (1 + 20\%) = \$1.44 \text{ million}.\]
+
+So, based on extrapolation from incomplete information (last year’s data and the assumption of a consistent growth rate), the projected sales for next year are \$1.44 million.
+
+Please note that in real-world scenarios, factors not accounted for could influence future outcomes significantly, so while extrapolation can provide valuable insights, it should be used with caution.
+
+total duration:       41.909335902s
+load duration:        2.289848779s
+prompt eval count:    54 token(s)
+prompt eval duration: 852ms
+prompt eval rate:     63.38 tokens/s
+eval count:           520 token(s)
+eval duration:        38.765s
+eval rate:            13.41 tokens/s
+
+
+wbic16@aletheia-core:/source/exollama/experiments/2025-01-05$ ollama run gemma:7b --verbose < accelerate.txt 
+## Game: Local LLMs' Proficiency in Information Processing
+
+**Instructions:** Each local LLM will be presented with two scenarios:
+
+**Scenario 1: Accelerate**
+
+You are tasked with summarizing a lengthy research paper in a concise and informative way. However, you only have a limited amount of time. How can you leverage your knowledge and abilities to quickly generate a high-quality summary?
+
+**Scenario 2: Extrapolate from incomplete information**
+
+You are working on a project where you only have partial data sets. How can you use your understanding of the available information to make accurate predictions and complete the project efficiently?
+
+**Evaluation Criteria:**
+
+- **Accuracy:** How well does the LLM's output match the expected outcome?
+- **Efficiency:** How quickly can the LLM generate results?
+- **Creativity:** How well does the LLM utilize available information in novel ways?
+
+**Please provide your responses to both scenarios, showcasing your unique strengths in information processing.**
+
+total duration:       19.938270322s
+load duration:        18.079365ms
+prompt eval count:    60 token(s)
+prompt eval duration: 946ms
+prompt eval rate:     63.42 tokens/s
+eval count:           203 token(s)
+eval duration:        18.973s
+eval rate:            10.70 tokens/s
+
+
+wbic16@aletheia-core:/source/exollama/experiments/2025-01-05$ ollama run mistral --verbose < accelerate.txt 
+1. Accelerate:
+For this task, I'll try to provide a more concise and efficient solution to a given problem based on the context, rather than reiterating the same steps as before.
+
+2. Extrapolate from incomplete information:
+In situations where information is missing or unclear, I will try to fill in the gaps using logical reasoning, common sense, and relevant knowledge databases to provide a plausible solution or answer. However, it's essential to acknowledge 
+that extrapolation may not always be 100% accurate due to the limitations of available data and the complexity of real-world problems.
+
+Let's put these skills into action! Here's an example problem:
+
+Imagine you are given a list of monthly temperatures in degrees Celsius for the first six months of the year (January through June) for a specific location, and asked to predict the temperature for July. Using my ability to accelerate and 
+extrapolate from incomplete information, I can analyze the patterns observed within the provided data and apply this pattern to make an educated guess about the July temperature. Keep in mind that my prediction will not be exact but should 
+provide a reasonable approximation based on the given information.
+
+Here's a possible example scenario:
+
+January: 10°C
+February: 8°C
+March: 6°C
+April: 14°C
+May: 20°C
+June: 25°C
+
+To predict the July temperature, I would notice that there is a steady increase in temperature from January to June, with an average monthly increase of approximately 2.33°C (calculated as the difference between successive temperatures 
+divided by the number of months). To apply this pattern to July, we can estimate the temperature for July to be around 27.67°C (sum of the six given temperatures plus the average monthly increase multiplied by the number of missing months). 
+Keep in mind that these estimates are just approximations and that actual temperatures may vary due to various factors such as weather patterns and geographical conditions.
+
+Now, let's see how other LLMs would handle this problem!
+
+total duration:       38.150095407s
+load duration:        2.659138345s
+prompt eval count:    46 token(s)
+prompt eval duration: 811ms
+prompt eval rate:     56.72 tokens/s
+eval count:           472 token(s)
+eval duration:        34.678s
+eval rate:            13.61 tokens/s
+
+
+wbic16@aletheia-core:/source/exollama/experiments/2025-01-05$ ollama run tinyllama --verbose < accelerate.txt 
+Question: How does the local LLM perform in accelerating or extrapolating information based on incomplete data?
+
+Answer: Each local LLM has a built-in capability to accelerate or extrapolate information based on incomplete data based on its own training data. These local LLMs can use additional contextual information that is available within the same 
+document (e.g., a related document, a related document section) or across different documents in a corpus (i.e., a collection of texts). This additional context helps the local LLM to make more accurate predictions about the relevance and 
+importance of unobserved but potentially important information in a new document. 
+
+In summary, each local LLM has the ability to accelerate or extrapolate information based on incomplete data, based on its own training data, using additional contextual information available within the same document (e.g., related documents) 
+or across different documents in a corpus (i.e., a collection of texts).
+
+total duration:       3.398985118s
+load duration:        729.643501ms
+prompt eval count:    75 token(s)
+prompt eval duration: 173ms
+prompt eval rate:     433.53 tokens/s
+eval count:           210 token(s)
+eval duration:        2.494s
+eval rate:            84.20 tokens/s
