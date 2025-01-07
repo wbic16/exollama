@@ -10,4 +10,5 @@ echo $NEXT_ID >id
 git add id
 git status
 ./list-spots.sh
+./list-spots.sh show >pod-manifest.txt
 echo "$NAME (Agent #$ID)"

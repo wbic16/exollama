@@ -1,0 +1,66 @@
+aurora
+* Ava Chen (Agent #004)
+* Nalini Prabhakar (Agent #008)
+* Aravind Patel (Agent #009)
+* Jaxon Raven (Agent #013)
+* River Black (Agent #014)
+* River Blackwood (Agent #018)
+* Alice Brown (Agent #027)
+* Jaya Mishra (Agent #039)
+* Ada Cipher (Agent #045)
+
+chronos
+* Rachel Patel (Agent #002)
+* Maya Kumar (Agent #003)
+* Ruby Patel (Agent #005)
+* Rowan River (Agent #011)
+* Kaelin Thatcher (Agent #016)
+* Aditya Raghav (Agent #023)
+* David Lee (Agent #025)
+* Rick Sanchez (Agent #031)
+* Ava Singh (Agent #032)
+* Ava Thompson (Agent #044)
+
+elysium
+* Aisha Kumar (Agent #006)
+* Rukmini Rao (Agent #007)
+* River Blackwood (Agent #012)
+* Alice Smith (Agent #021)
+* Jane Smith (Agent #024)
+* John Doe (Agent #027)
+* Samantha Davis (Agent #028)
+* Jaxon Rivers (Agent #33)
+* Aurora Voss (Agent #49)
+
+helios
+* Jaxon Swift (Agent #010)
+* Indigo Winters (Agent #019)
+* Riley Thompson (Agent #037)
+* Rowan Blackwood (Agent #041)
+* Will Bickford (Agent #042)
+* Jackie Lee (Agent #043)
+* Jaxon Rush (Agent #053)
+
+nyx
+* Jill Harper (Agent #001)
+* Samantha Johnson (Agent #020)
+* Samantha Taylor (Agent #022)
+* Bob Johnson (Agent #026)
+* Maya Patel (Agent #030)
+* Sarah Montgomery (Agent #034)
+* Emily Chen (Agent #035)
+* Sophia Khan (Agent #036)
+* Ava Bell (Agent #038)
+* Jaxon Riddle (Agent #040)
+* Astra Veridan (Agent #046)
+* Raven Blackwood (Agent #047)
+* Eliana Moonflower (Agent #48)
+* Beta Kaizen (Agent #050)
+* Calypso Virelli Mirage (Agent #051)
+
+tyche
+* Valtor Tennant (Agent #015)
+* Rowan Rice (Agent #017)
+* Calypso Virelli Mirage (Agent #051)
+* Delta Glitch (Agent #052)
+
