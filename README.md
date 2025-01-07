@@ -1,13 +1,13 @@
-## llama2_q4.cu
+## exollama
 
-Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models
+Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models.
 
 Based on [llama2.c](https://github.com/karpathy/llama2.c)
 Forked from [llama2_q4.cu](https://github.com/ankan-ban/llama_cu_awq)
 
 ## One-Step Setup
 
-The instructions below still apply, but you can execute all of them in one shot with `setup.sh` on Ubuntu 22.04 LTS with an NVidia GPU.
+The instructions below still apply, but you can execute all of them in one shot with `setup.sh` on Ubuntu 24.04 LTS with an NVidia GPU. AMD support via rocm is a work-in-progress.
 
 After you've completed setup, use run.sh to run your prompts through your new LLM!
 
@@ -22,8 +22,8 @@ After you've completed setup, use run.sh to run your prompts through your new LL
 ## Build
 
 ```
-git clone https://github.com/ankan-ban/llama_cu_awq
-cd llama_cu_awq
+git clone https://github.com/wbic16/exollama
+cd exollama
 mdkir build
 cd build
 cmake ..
