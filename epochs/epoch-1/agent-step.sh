@@ -9,3 +9,4 @@ echo $ID >id
 git add id
 git status
 ./list-spots.sh
+echo "$NAME (Agent #$ID)"
