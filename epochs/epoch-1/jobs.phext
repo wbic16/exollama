@@ -1,7 +1,7 @@
+* 6 work pods
 * divide and conquer workflows
 * agent DNA
 * 125 WPM per agent (90 scrolls per day per agent)
-* 6 work pods
 * network flow
 * chat interface
 * rest api (update hello-phext to use sq)
