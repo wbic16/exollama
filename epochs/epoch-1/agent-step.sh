@@ -8,3 +8,4 @@ ID=$(($ID+1))
 echo $ID >id
 git add id
 git status
+./list-spots.sh
