@@ -1,2 +1,2 @@
 #!/bin/sh
-avahi-browse _exocortex_exopod._tcp
+avahi-browse _exocortex_pod._tcp
