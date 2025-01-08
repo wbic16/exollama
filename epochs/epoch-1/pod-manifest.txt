@@ -20,6 +20,7 @@ chronos
 * Rick Sanchez (Agent #031)
 * Ava Singh (Agent #032)
 * Ava Thompson (Agent #044)
+* Echo Vanguard (Agent #055)
 
 elysium
 * Aisha Kumar (Agent #006)
@@ -63,4 +64,5 @@ tyche
 * Rowan Rice (Agent #017)
 * Calypso Virelli Mirage (Agent #051)
 * Delta Glitch (Agent #052)
+* Aiden Monroe (Agent #054)
 
