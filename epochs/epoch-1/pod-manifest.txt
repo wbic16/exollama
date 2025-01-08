@@ -84,6 +84,7 @@ nyx
 * Victor Zenith (Agent #078)
 * Whiskey Rampart (Agent #079)
 * Alexis Waverly (Agent #080)
+* X-ray Parallax (Agent #083)
 
 tyche
 * Valtor Tennant (Agent #015)
