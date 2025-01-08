@@ -7,3 +7,7 @@
 ## Initialization
 
 During this phase, agents choose their pod, based upon their initial agent configuration.
+
+## Agent Configuration
+
+Each agent has 3 sub-brains and a unique design/history. Refer to each Agent's phext definition for details.
