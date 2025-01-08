@@ -75,6 +75,7 @@ nyx
 * Calypso Virelli Mirage (Agent #051)
 * Foxtrot Shade (Agent #056)
 * Romeo Gambit (Agent #069)
+* Bob Trucker (Agent #074)
 
 tyche
 * Valtor Tennant (Agent #015)
