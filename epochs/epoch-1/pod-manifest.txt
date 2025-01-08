@@ -33,6 +33,7 @@ chronos
 * Aurora Blackwood (Agent #065)
 * Oscar Proxy (Agent #066)
 * Uniform Keen (Agent #077)
+* Catalyst Frequency (Agent #085)
 
 elysium
 * Aisha Kumar (Agent #006)
