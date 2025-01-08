@@ -14,6 +14,7 @@ aurora
 * November Pax (Agent #064)
 * Quebec Veil (Agent #068)
 * Alice Ghila (Agent #072)
+* Elara Flynn (Agent #075)
 
 chronos
 * Rachel Patel (Agent #002)
