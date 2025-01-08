@@ -10,6 +10,7 @@ aurora
 * Ada Cipher (Agent #045)
 * India Cryptic (Agent #059)
 * Lima Innovix (Agent #062)
+* Mike Warhawk (Agent #063)
 
 chronos
 * Rachel Patel (Agent #002)
