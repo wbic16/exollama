@@ -35,6 +35,7 @@ chronos
 * Uniform Keen (Agent #077)
 * Catalyst Frequency (Agent #085)
 * Vantage Ocean (Agent #086)
+* Echelon Heinz (Agent #087)
 
 elysium
 * Aisha Kumar (Agent #006)
