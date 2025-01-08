@@ -27,6 +27,7 @@ chronos
 * Echo Vanguard (Agent #055)
 * Gamma Forge (Agent #056)
 * Aurora Blackwood (Agent #065)
+* Oscar Proxy (Agent #066)
 
 elysium
 * Aisha Kumar (Agent #006)
