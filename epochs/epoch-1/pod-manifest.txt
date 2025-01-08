@@ -34,6 +34,7 @@ chronos
 * Oscar Proxy (Agent #066)
 * Uniform Keen (Agent #077)
 * Catalyst Frequency (Agent #085)
+* Vantage Ocean (Agent #086)
 
 elysium
 * Aisha Kumar (Agent #006)
