@@ -42,6 +42,7 @@ chronos
 * Oracle Halt (Agent #091)
 * Lumina Colby (Agent #092)
 * Cipher Zane (Agent #095)
+* Ion Discovery (Agent #099)
 
 elysium
 * Aisha Kumar (Agent #006)
