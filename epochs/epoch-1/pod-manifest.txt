@@ -67,4 +67,5 @@ tyche
 * Calypso Virelli Mirage (Agent #051)
 * Delta Glitch (Agent #052)
 * Aiden Monroe (Agent #054)
+* Hotel Inquis (Agent #058)
 
