@@ -15,7 +15,7 @@ aurora
 * Quebec Veil (Agent #068)
 * Alice Ghila (Agent #072)
 * Elara Flynn (Agent #075)
-* Chrysalis Hub (Agent #76)
+* Chrysalis Huerta (Agent #76)
 
 chronos
 * Rachel Patel (Agent #002)
@@ -32,6 +32,7 @@ chronos
 * Gamma Forge (Agent #056)
 * Aurora Blackwood (Agent #065)
 * Oscar Proxy (Agent #066)
+* Uniform Keen (Agent #077)
 
 elysium
 * Aisha Kumar (Agent #006)
