@@ -49,6 +49,7 @@ elysium
 * Sierra Catalyst (Agent #071)
 * Tango Axiom (Agent #074)
 * Jack Smith (Agent #081)
+* Alexander Brown (Agent #082)
 
 helios
 * Jaxon Swift (Agent #010)
