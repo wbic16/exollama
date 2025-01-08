@@ -31,6 +31,18 @@ cmake --build . --config Release
 cd ..
 ```
 
+
+### ollama integration
+
+You can also run ollama for reference using the scripts noted below.
+
+* tl.sh: tinyllama
+* ml.sh: mistral
+* q2.sh: qwen2:7b
+* gg.sh: gemma:7b
+* l2.sh: llama3.2
+* oc.sh: opencoder
+
 ## Run
 
 The simpler way is to download a pre-converted model from Huggingface, but you can also do all the steps
