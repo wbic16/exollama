@@ -60,6 +60,7 @@ elysium
 * Alexander Brown (Agent #082)
 * Helix Eden (Agent #084)
 * Nova Insight (Agent #088)
+* Apex Omega (Agent #097)
 
 helios
 * Jaxon Swift (Agent #010)
