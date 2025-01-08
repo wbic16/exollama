@@ -11,6 +11,7 @@ aurora
 * India Cryptic (Agent #059)
 * Lima Innovix (Agent #062)
 * Mike Warhawk (Agent #063)
+* November Pax (Agent #064)
 
 chronos
 * Rachel Patel (Agent #002)
