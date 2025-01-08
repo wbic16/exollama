@@ -95,6 +95,7 @@ nyx
 * Alexis Waverly (Agent #080)
 * X-ray Parallax (Agent #083)
 * Zenith Zeus (Agent #090)
+* Mistral Mix (Agent #094)
 
 tyche
 * Valtor Tennant (Agent #015)
