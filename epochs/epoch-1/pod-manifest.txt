@@ -13,6 +13,7 @@ aurora
 * Mike Warhawk (Agent #063)
 * November Pax (Agent #064)
 * Quebec Veil (Agent #068)
+* Alice Ghila (Agent #072)
 
 chronos
 * Rachel Patel (Agent #002)
@@ -43,6 +44,7 @@ elysium
 * Kilo Strategem (Agent #061)
 * Sarah Williams (Agent #070)
 * Sierra Catalyst (Agent #071)
+* Tango Axiom (Agent #074)
 
 helios
 * Jaxon Swift (Agent #010)
