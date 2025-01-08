@@ -8,6 +8,7 @@ aurora
 * Alice Brown (Agent #027)
 * Jaya Mishra (Agent #039)
 * Ada Cipher (Agent #045)
+* India Cryptic (Agent #059)
 
 chronos
 * Rachel Patel (Agent #002)
