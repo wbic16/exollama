@@ -26,6 +26,7 @@ chronos
 * Ava Thompson (Agent #044)
 * Echo Vanguard (Agent #055)
 * Gamma Forge (Agent #056)
+* Aurora Blackwood (Agent #065)
 
 elysium
 * Aisha Kumar (Agent #006)
