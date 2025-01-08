@@ -1,5 +1,5 @@
 #!/bin/sh
-MODEL="gemma:7b" # llama3.2, qwen2, gemma, tinyllama, mixtral, etc.
+MODEL="tinyllama" # llama3.2, qwen2:7b, gemma:7b, tinyllama, mixtral, etc.
 ID=`cat id`
 NAME=`cd ../../ && ./verify-agent.sh $ID |grep 'Name:' |sed 's/Name: //g'`
 echo "Taking next time-step action for $NAME (Agent #$ID)..."
