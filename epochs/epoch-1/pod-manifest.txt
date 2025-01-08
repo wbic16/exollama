@@ -12,6 +12,7 @@ aurora
 * Lima Innovix (Agent #062)
 * Mike Warhawk (Agent #063)
 * November Pax (Agent #064)
+* Quebec Veil (Agent #068)
 
 chronos
 * Rachel Patel (Agent #002)
