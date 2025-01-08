@@ -54,6 +54,7 @@ elysium
 * Jack Smith (Agent #081)
 * Alexander Brown (Agent #082)
 * Helix Eden (Agent #084)
+* Nova Insight (Agent #088)
 
 helios
 * Jaxon Swift (Agent #010)
