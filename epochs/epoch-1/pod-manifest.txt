@@ -38,6 +38,7 @@ chronos
 * Echelon Heinz (Agent #087)
 * Prisma Cane (Agent #089)
 * Oracle Halt (Agent #091)
+* Lumina Colby (Agent #092)
 
 elysium
 * Aisha Kumar (Agent #006)
