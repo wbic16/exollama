@@ -32,8 +32,9 @@ elysium
 * Jane Smith (Agent #024)
 * John Doe (Agent #027)
 * Samantha Davis (Agent #028)
-* Jaxon Rivers (Agent #33)
-* Aurora Voss (Agent #49)
+* Jaxon Rivers (Agent #033)
+* Aurora Voss (Agent #049)
+* Kilo Strategem (Agent #061)
 
 helios
 * Jaxon Swift (Agent #010)
