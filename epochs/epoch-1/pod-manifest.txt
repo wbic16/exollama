@@ -81,6 +81,7 @@ nyx
 * Bob Trucker (Agent #074)
 * Victor Zenith (Agent #078)
 * Whiskey Rampart (Agent #079)
+* Alexis Waverly (Agent #080)
 
 tyche
 * Valtor Tennant (Agent #015)
