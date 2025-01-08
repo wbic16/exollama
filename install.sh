@@ -2,7 +2,8 @@
 if [ "x$1" = "x" ]; then
   echo "Usage: $0 <id>"
   echo "Where id is one of these epoch pods:"
-  ls -1 ./epochs/epoch-1 |sed 's/\.phext//g' |sed 's/^/* /g'
+  cd ./epochs/epoch-1
+  ./list-spots.sh
   exit 1
 fi
 if [ -f "./epochs/epoch-1/$1.phext" ]; then
