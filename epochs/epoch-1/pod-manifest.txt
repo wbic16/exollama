@@ -15,6 +15,7 @@ aurora
 * Quebec Veil (Agent #068)
 * Alice Ghila (Agent #072)
 * Elara Flynn (Agent #075)
+* Chrysalis Hub (Agent #76)
 
 chronos
 * Rachel Patel (Agent #002)
