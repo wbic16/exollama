@@ -15,7 +15,7 @@ aurora
 * Quebec Veil (Agent #068)
 * Alice Ghila (Agent #072)
 * Elara Flynn (Agent #075)
-* Chrysalis Huerta (Agent #76)
+* Chrysalis Huerta (Agent #076)
 
 chronos
 * Rachel Patel (Agent #002)
@@ -79,6 +79,7 @@ nyx
 * Foxtrot Shade (Agent #056)
 * Romeo Gambit (Agent #069)
 * Bob Trucker (Agent #074)
+* Victor Zenith (Agent #078)
 
 tyche
 * Valtor Tennant (Agent #015)
