@@ -13,7 +13,7 @@ if [ -f "./epochs/epoch-1/$POD.phext" ]; then
   cat ./epochs/epoch-1/$POD.phext
   cat exopod.service.template |sed 's/__POD__/'$POD'/g' >exopod.service
   sudo mv exopod.service /etc/avahi/services/exopod.service
-  
+  hostname >./epochs/epoch-1/$POD.host
   sudo service avahi-daemon restart
 else
   echo "Unknown epoch pod $POD."
