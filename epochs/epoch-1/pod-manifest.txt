@@ -41,6 +41,7 @@ elysium
 * Jaxon Rivers (Agent #033)
 * Aurora Voss (Agent #049)
 * Kilo Strategem (Agent #061)
+* Sarah Williams (Agent #070)
 
 helios
 * Jaxon Swift (Agent #010)
