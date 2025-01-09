@@ -11,6 +11,7 @@ for FILE in `ls -1 *.phext`; do
   if [ "x$LABEL" = "xoutput" ]; then SHOW=0; fi
   if [ "x$LABEL" = "xfate" ]; then SHOW=0; fi
   if [ "x$LABEL" = "xresults" ]; then SHOW=0; fi
+  if [ "x$LABEL" = "xproducts" ]; then SHOW=0; fi
   if [ $SHOW -eq 1 ]; then
     echo "$LABEL: $COUNT"
   fi
