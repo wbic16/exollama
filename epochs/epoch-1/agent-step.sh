@@ -22,6 +22,15 @@ if [ $ROUND -eq 0 ]; then
   fi
 fi
 
+if [ ! -f "/etc/exollama.id" ]; then
+  echo "Error: You need to run install.sh first."
+  exit 1
+fi
+POD=`cat /etc/exollama.id`
 NAME=`./agent-name.sh $ID`
 echo "$NAME (Agent #$ID) [Round $ROUND]"
-
+./roster.sh >$POD.roster
+POD_CHECK=`grep -c "$NAME" "$POD.roster"`
+if [ $POD_CHECK -eq 1 ]; then
+  echo " [ $NAME ]: Running"
+fi
