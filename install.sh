@@ -8,7 +8,7 @@ if [ "x$POD" = "x" ]; then
   exit 1
 fi
 if [ -f "./epochs/epoch-1/$POD.phext" ]; then
-  sudo echo -n $POD /etc/exollama.id
+  sudo echo -n $POD >/etc/exollama.id
   echo "Configured node for $POD"
   cat ./epochs/epoch-1/$POD.phext
   cat exopod.service.template |sed 's/__POD__/'$POD'/g' >exopod.service
