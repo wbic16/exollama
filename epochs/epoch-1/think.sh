@@ -11,3 +11,7 @@ TEXT=`cat msg.txt`
 ../../l2.sh "$TEXT" >msg.txt
 cat msg.txt
 ./post-message.sh $COORD
+
+POD=`cat /etc/exollama.id`
+sq save $POD.phext
+git diff
