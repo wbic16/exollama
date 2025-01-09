@@ -10,15 +10,11 @@ if [ ! -f "$POD.phext" ]; then
 fi
 
 SQ_STATE=0
-if [ -d ".sq" ]; then SQ_STATE=1; fi
-if [ $SQ_STATE -eq 1 ]; then
-  HOSTING=`ps -ef |grep sq |grep -v grep |grep -c $POD`
-  if [ $HOSTING -eq 1 ]; then SQ_STATE=2; fi
-else
+HOSTING=`ps -ef |grep sq |grep -v grep |grep -c $POD`
+if [ $HOSTING -eq 1 ]; then SQ_STATE=1; fi
+
+if [ $SQ_STATE -ne 1 ]; then
   sq $POD.phext &
-  SQ_STATE=2
 fi
 
-if [ $SQ_STATE -eq 2 ]; then
-  echo "$POD Online"
-fi
+echo "$POD Online"
