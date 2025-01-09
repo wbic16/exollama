@@ -1,4 +1,4 @@
-aurora
+aurora (19)
 * Ava Chen (Agent #004)
 * Nalini Prabhakar (Agent #008)
 * Aravind Patel (Agent #009)
@@ -19,7 +19,7 @@ aurora
 * Jaden Riley (Agent #096)
 * Jaxon Renn (Agent #098)
 
-chronos
+chronos (23)
 * Rachel Patel (Agent #002)
 * Maya Kumar (Agent #003)
 * Ruby Patel (Agent #005)
@@ -44,7 +44,7 @@ chronos
 * Cipher Zane (Agent #095)
 * Ion Discovery (Agent #099)
 
-elysium
+elysium (18)
 * Aisha Kumar (Agent #006)
 * Rukmini Rao (Agent #007)
 * River Blackwood (Agent #012)
@@ -64,7 +64,7 @@ elysium
 * Nova Insight (Agent #088)
 * Apex Omega (Agent #097)
 
-helios
+helios (11)
 * Jaxon Swift (Agent #010)
 * Indigo Winters (Agent #019)
 * Riley Thompson (Agent #037)
@@ -77,7 +77,7 @@ helios
 * Delta Sunset (Agent #093)
 * Parhelion Verge (Agent #100)
 
-nyx
+nyx (24)
 * Jill Harper (Agent #001)
 * Samantha Johnson (Agent #020)
 * Samantha Taylor (Agent #022)
@@ -103,7 +103,7 @@ nyx
 * Zenith Zeus (Agent #090)
 * Mistral Mix (Agent #094)
 
-tyche
+tyche (6)
 * Valtor Tennant (Agent #015)
 * Rowan Rice (Agent #017)
 * Calypso Virelli Mirage (Agent #051)

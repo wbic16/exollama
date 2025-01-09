@@ -1,19 +1,24 @@
 #!/bin/sh
 MODEL="llama3.2" # llama3.2, qwen2:7b, gemma:7b, tinyllama, mixtral, etc.
-ID=`cat id`
-if [ "x$ID" = "x" ]; then ID=0; fi
-if [ $ID -eq 101 ]; then
-  echo "Initialization Complete."
-  exit 0
+ROUND=0
+if [ -f round ]; then
+  ROUND=`cat round`
 fi
-NAME=`cd ../../ && ./verify-agent.sh $ID |grep 'Name:' |sed 's/Name: //g'`
-echo "Taking next time-step action for $NAME (Agent #$ID)..."
-ollama run $MODEL --verbose "Think like an agent. Your first mission, should you choose to accept it, is to pick a pod from this list: aurora, chronos, elysium, helios, nyx, or tyche. Assume the identity of $NAME, Agent #$ID." >output.phext
-cat output.phext
-NEXT_ID=$(($ID+1))
-echo $NEXT_ID >id
-git add id
-git status
-./list-spots.sh
-./update-pod-manifest.sh
-echo "$NAME (Agent #$ID)"
+ID=0
+if [ -f id ]; then
+  ID=`cat id`
+fi
+
+if [ $ROUND -eq 0 ]; then
+  if [ $ID -eq 101 ]; then
+    echo "Initialization Complete."
+    echo "Initiating evolution."
+    ROUND=1
+    ID=1
+    echo $ID >id
+    echo $ROUND >round
+  else
+    ./init-agent.sh $ID $MODEL
+  fi
+fi
+echo "$NAME (Agent #$ID) [Round $ROUND]"

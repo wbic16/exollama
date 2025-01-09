@@ -2,7 +2,7 @@
 ACTION=$1
 for FILE in `ls -1 *.phext`; do
   COUNT=`cat $FILE |grep -c '\*'`
-  COUNT=$((20 - $COUNT))
+  REMAINING=$((20 - $COUNT))
   LABEL=`echo $FILE |sed 's/\.phext//g'`
   SHOW=1
   if [ "x$ACTION" = "xshow" ]; then SHOW=2; fi
@@ -13,10 +13,10 @@ for FILE in `ls -1 *.phext`; do
   if [ "x$LABEL" = "xresults" ]; then SHOW=0; fi
   if [ "x$LABEL" = "xproducts" ]; then SHOW=0; fi
   if [ $SHOW -eq 1 ]; then
-    echo "$LABEL: $COUNT"
+    echo "$LABEL: $REMAINING"
   fi
   if [ $SHOW -eq 2 ]; then
-    echo $LABEL
+    echo "$LABEL ($COUNT)"
     cat $FILE |grep '\*'
     echo
   fi
