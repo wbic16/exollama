@@ -21,4 +21,7 @@ if [ $ROUND -eq 0 ]; then
     ./init-agent.sh $ID $MODEL
   fi
 fi
+
+NAME=`./agent-name.sh $ID`
 echo "$NAME (Agent #$ID) [Round $ROUND]"
+
