@@ -35,6 +35,8 @@ while [ $PROCESSED -eq 0 ]; do
   if [ $POD_CHECK -eq 1 ]; then
     echo " [ $NAME ]: Running Round $ROUND"
     PROCESSED=1
+    ./think.sh $ID
+    git status
   else
     ID=$(($ID+1))
   fi

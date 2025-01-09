@@ -1,4 +1,5 @@
 * stop spewing the console from sq
+* sq pull problem for un-initialized scrolls
 * agent DNA
 * agent config
 * divide and conquer workflows
