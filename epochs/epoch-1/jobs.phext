@@ -1,10 +1,9 @@
-* 6 work pods
-* divide and conquer workflows
 * agent DNA
-* 125 WPM per agent (90 scrolls per day per agent)
+* agent config
+* divide and conquer workflows
 * network flow
 * chat interface
 * rest api (update hello-phext to use sq)
-* progress bars
 * RFLs (Request for Learning)
-* orchestrator
+* 3-brain cycle
+* pod cycling
