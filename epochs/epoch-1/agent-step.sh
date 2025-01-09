@@ -1,6 +1,11 @@
 #!/bin/sh
 MODEL="llama3.2" # llama3.2, qwen2:7b, gemma:7b, tinyllama, mixtral, etc.
 ID=`cat id`
+if [ "x$ID" = "x" ]; then ID=0; fi
+if [ $ID -eq 101 ]; then
+  echo "Initialization Complete."
+  exit 0
+fi
 NAME=`cd ../../ && ./verify-agent.sh $ID |grep 'Name:' |sed 's/Name: //g'`
 echo "Taking next time-step action for $NAME (Agent #$ID)..."
 ollama run $MODEL --verbose "Think like an agent. Your first mission, should you choose to accept it, is to pick a pod from this list: aurora, chronos, elysium, helios, nyx, or tyche. Assume the identity of $NAME, Agent #$ID." >output.phext
