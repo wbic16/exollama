@@ -34,10 +34,11 @@ while [ $PROCESSED -eq 0 ]; do
   POD_CHECK=`grep -c "$NAME" "$POD.roster"`
   if [ $POD_CHECK -eq 1 ]; then
     echo " [ $NAME ]: Running Round $ROUND"
-    PROCESSED=1
-    ./think.sh $ID
+    ./maybe-think.sh $ID
+    if [ $? -eq 0 ]; then PROCESSED=1; else ID=$(($ID+1)); fi
     git status
   else
     ID=$(($ID+1))
   fi
+  if [ $ID -eq 101 ]; then PROCESSED=1; fi
 done
