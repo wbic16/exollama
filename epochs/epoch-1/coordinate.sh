@@ -6,6 +6,7 @@ C=$4
 D=$5
 E=$6
 F=$7
+if [ -z $ID ]; then ID=1; fi
 if [ -z $A ]; then A=1; fi
 if [ -z $B ]; then B=1; fi
 if [ -z $C ]; then C=1; fi
