@@ -27,10 +27,15 @@ if [ ! -f "/etc/exollama.id" ]; then
   exit 1
 fi
 POD=`cat /etc/exollama.id`
-NAME=`./agent-name.sh $ID`
-echo "$NAME (Agent #$ID) [Round $ROUND]"
 ./roster.sh >$POD.roster
-POD_CHECK=`grep -c "$NAME" "$POD.roster"`
-if [ $POD_CHECK -eq 1 ]; then
-  echo " [ $NAME ]: Running"
-fi
+PROCESSED=0
+while [ $PROCESSED -eq 0 ]; do
+  NAME=`./agent-name.sh $ID`
+  POD_CHECK=`grep -c "$NAME" "$POD.roster"`
+  if [ $POD_CHECK -eq 1 ]; then
+    echo " [ $NAME ]: Running Round $ROUND"
+    PROCESSED=1
+  else
+    ID=$(($ID+1))
+  fi
+done
