@@ -38,3 +38,6 @@ if [ -f /etc/exollama.id ]; then
   sudo mv /etc/exollama.id /etc/exollama/pod.id
 fi
 cp el-version /etc/exollama/el-version
+VERSION=`cat /etc/exollama/el-version`
+./deps.sh
+echo "exollama $VERSION ready."
