@@ -14,6 +14,6 @@ while [ $CHANGED -gt 0 ]; do
     `$COMMIT_MSG`
     rm -f .exo-commit
   fi
-  exit 0
+  mv .exo-step .exo-prior
 done
 echo " [ $POD ]: Round $ROUND Complete."
