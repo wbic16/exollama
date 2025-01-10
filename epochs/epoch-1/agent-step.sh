@@ -52,14 +52,20 @@ while [ $PROCESSED -eq 0 ]; do
   if [ $ID -eq 101 ]; then PROCESSED=1; fi
 done
 
+INSTRUCT=0
 if [ $ID -eq 101 ]; then
   echo " [ $POD ] Round $ROUND Complete."
   ./round-status.sh
 else
-  echo "Review the output below, then commit with:"
-  echo "   git commit -m '$NAME Update for $POD - Round $ROUND"
+  INSTRUCT=1
 fi
-
 git diff
 git add .
 git status
+if [ $INSTRUCT -eq 1 ]; then
+  echo "Review the output above, then commit with:"
+  echo ""
+  echo "   git commit -m \"$NAME Update for $POD - Round $ROUND\""
+fi
+
+
