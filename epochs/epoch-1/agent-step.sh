@@ -27,6 +27,7 @@ if [ ! -f "/etc/exollama.id" ]; then
   exit 1
 fi
 POD=`cat /etc/exollama.id`
+./pod-status.sh
 if [ -f .exosync ]; then
   ELAPSED=`stat -c %Y .exosync`
   ELAPSED=$(($EPOCHSECONDS - $ELAPSED))
