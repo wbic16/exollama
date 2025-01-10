@@ -28,10 +28,12 @@ if [ ! -f "/etc/exollama.id" ]; then
 fi
 POD=`cat /etc/exollama.id`
 if [ -f .exosync ]; then
-  ELAPSED=$(($EPOCHSECONDS - `stat -c %Y .exosync`))
+  ELAPSED=`stat -c %Y .exosync`
+  ELAPSED=$(($EPOCHSECONDS - $ELAPSED))
   ELAPSED=$(($ELAPSED/3600))
   if [ $ELAPSED -gt 0 ]; then
     git pull
+    touch .exosync
   fi
 fi
 ./roster.sh >$POD.roster
@@ -46,6 +48,7 @@ while [ $PROCESSED -eq 0 ]; do
     git status
   else
     ID=$(($ID+1))
+    echo " [ $NAME ]: skipped"
   fi
   if [ $ID -eq 101 ]; then PROCESSED=1; fi
 done
