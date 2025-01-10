@@ -27,6 +27,13 @@ if [ ! -f "/etc/exollama.id" ]; then
   exit 1
 fi
 POD=`cat /etc/exollama.id`
+if [ -f .exosync ]; then
+  ELAPSED=$(($EPOCHSECONDS - `stat -c %Y .exosync`))
+  ELAPSED=$(($ELAPSED/3600))
+  if [ $ELAPSED -gt 0 ]; then
+    git pull
+  fi
+fi
 ./roster.sh >$POD.roster
 PROCESSED=0
 while [ $PROCESSED -eq 0 ]; do
