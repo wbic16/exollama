@@ -47,7 +47,7 @@ while [ $PROCESSED -eq 0 ]; do
     ./maybe-think.sh $ID
     if [ $? -eq 0 ]; then
       PROCESSED=1
-      echo "git commit -m \"$NAME Update for $POD - Round $ROUND\"" >.exo-commit
+      echo "git commit -m \\\"$NAME Update for $POD - Round $ROUND\\\"" >.exo-commit
     else
       ID=$(($ID+1))
     fi
