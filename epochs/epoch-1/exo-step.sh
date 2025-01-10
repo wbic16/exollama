@@ -11,7 +11,7 @@ while [ $CHANGED -gt 0 ]; do
   CHANGED=`diff .exo-step .exo-prior |wc -l`
   if [ -f .exo-commit ]; then
     COMMIT_MSG=`cat .exo-commit`
-    `$COMMIT_MSG`
+    git commit -m "$COMMIT_MSG"
     rm -f .exo-commit
   fi
   mv .exo-step .exo-prior
