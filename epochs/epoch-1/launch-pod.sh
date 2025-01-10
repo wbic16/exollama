@@ -12,7 +12,8 @@ fi
 SQ_STATE=`ps -ef |grep sq |grep -v grep |grep -c $POD`
 if [ $SQ_STATE -eq 0 ]; then
   rm -rf .sq
-  sq $POD.phext &
+  killall sq
+  sq $POD.phext >.sq/output 2>.sq/errors &
 fi
 if [ $SQ_STATE -eq 1 ]; then
   echo "$POD Online"
