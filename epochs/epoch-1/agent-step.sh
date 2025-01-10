@@ -39,6 +39,7 @@ if [ -f .exosync ]; then
 fi
 ./roster.sh >$POD.roster
 PROCESSED=0
+NAME=""
 while [ $PROCESSED -eq 0 ]; do
   NAME=`./agent-name.sh $ID`
   POD_CHECK=`grep -c "$NAME" "$POD.roster"`
