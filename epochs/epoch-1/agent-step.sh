@@ -45,27 +45,22 @@ while [ $PROCESSED -eq 0 ]; do
   POD_CHECK=`grep -c "$NAME" "$POD.roster"`
   if [ $POD_CHECK -eq 1 ]; then
     ./maybe-think.sh $ID
-    if [ $? -eq 0 ]; then PROCESSED=1; else ID=$(($ID+1)); fi
+    if [ $? -eq 0 ]; then
+      PROCESSED=1
+      echo "git commit -m \"$NAME Update for $POD - Round $ROUND\"" >.exo-commit
+    else
+      ID=$(($ID+1))
+    fi
   else
     ID=$(($ID+1))
   fi
   if [ $ID -eq 101 ]; then PROCESSED=1; fi
 done
 
-INSTRUCT=0
 if [ $ID -eq 101 ]; then
-  echo " [ $POD ] Round $ROUND Complete."
+  echo "Agent Processing Finished."
   ./round-status.sh
-else
-  INSTRUCT=1
 fi
 git diff
 git add .
 git status
-if [ $INSTRUCT -eq 1 ]; then
-  echo "Review the output above, then commit with:"
-  echo ""
-  echo "   git commit -m \"$NAME Update for $POD - Round $ROUND\""
-fi
-
-
