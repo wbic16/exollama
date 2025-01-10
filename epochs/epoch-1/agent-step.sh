@@ -48,7 +48,6 @@ while [ $PROCESSED -eq 0 ]; do
     git status
   else
     ID=$(($ID+1))
-    echo " [ $NAME ]: skipped"
   fi
   if [ $ID -eq 101 ]; then PROCESSED=1; fi
 done
