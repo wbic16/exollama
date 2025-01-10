@@ -1,10 +1,10 @@
 #!/bin/sh
 RUNNING=`ps -ef |grep -v grep |grep -c sq`
-if [ ! -f /etc/exollama.id ]; then
+if [ ! -f /etc/exollama/pod.id ]; then
   echo "Error: install first."
   exit 1
 fi
-POD=`cat /etc/exollama.id`
+POD=`../../pod-name.sh`
 if [ $RUNNING -eq 0 ]; then
   echo "$POD offline - attempting automatic resume..."
   ./launch-pod.sh

@@ -15,5 +15,5 @@ echo " [ $NAME ]: Round $ROUND"
 cat msg.txt
 ./post-message.sh $COORD
 
-POD=`cat /etc/exollama.id`
+POD=`../../pod-name.sh`
 sq save $POD.phext

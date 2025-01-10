@@ -1,9 +1,9 @@
 #!/bin/sh
-if [ ! -f /etc/exollama.id ]; then
+if [ ! -f /etc/exollama/pod.id ]; then
   echo "Error: you need to install a pod on this machine first."
   exit 1
 fi
-POD=`cat /etc/exollama.id`
+POD=`../../pod-name.sh`
 if [ ! -f "$POD.phext" ]; then
   echo "Unable to locate $POD."
   exit 1
