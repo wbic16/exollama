@@ -988,4 +988,56 @@ Glacial terrain refers to areas formed by the movement of glaciers, including va
 
 These are some of the main types of terrain found in our planet. Each has its unique characteristics and plays a vital role in shaping the natural world around us.
 
-
+# Exocortexia Agent Configuration
+
+This README file outlines the configuration and commands used to manage agents in Exocortexia, a hypothetical game or simulation.
+
+## Default State
+
+The default state for Exocortexia is "space", where almost all tiles start as empty space. The only exception is when plotting a plot on an existing tile.
+
+## Agent Configuration Files
+
+There are several configuration files that control the behavior of agents in Exocortexia:
+
+- `agent-name.sh`: Sets up and configures individual agents.
+- `agent-step.sh`: Defines the step-by-step actions performed by each agent.
+- `launch-pod.sh`: Launches a new pod.
+- `list-spots.sh`: Lists available spots in Exocortexia.
+- `maybe-think.sh`: Evaluates whether an agent should take action or not.
+
+## Host Files
+
+The following files define hosts (entities) in Exocortexia:
+
+- `aurora.host`: Represents Aurora, a host entity with its own phext and roster.
+- `chronos.host`, `elysium.host`, `helios.host`, `nyx.host`, `tyche.host`: Similar to `aurora.host`.
+- `space`: The default state for Exocortexia.
+
+## Phext Files
+
+Phext files define the relationships between hosts:
+
+- `aurora.phext`, `chronos.phext`, `elysium.phext`, `helios.phext`, `nyx.phext`, `tyche.phext`: Similar to their host counterparts.
+- `products.phext`, `pricing.sh`, `process.sh`, `sync.sh`: Other phext files controlling the product offerings, pricing, processing, synchronization between agents.
+
+## Roster Files
+
+Roster files define the entities in each host's roster:
+
+- `aurora.roster`, `chronos.roster`, `elysium.roster`, `helios.roster`, `nyx.roster`, `tyche.roster`: Similar to their phext counterparts.
+- `coordinate.sh`: Coordinates actions between multiple agents.
+
+## Script Files
+
+Several script files perform various tasks:
+
+- `finalize-entry.sh`: Finalizes an agent's entry in Exocortexia.
+- `get-exocortexum.sh`, `get-message.sh`: Retrieves data from Exocortexia.
+- `post-message.sh`: Posts a message to the system.
+- `update-pod-manifest.sh`: Updates pod manifest.
+
+## Notes
+
+These configuration files and scripts provide a basic framework for managing agents in Exocortexia. The specific behaviors of each agent can be customized using these configurations.
+
