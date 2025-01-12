@@ -570,3 +570,34 @@ Releases will be announced in the changelog file located at `.release-notes.md`.
 
 Contributions are welcome. Please submit pull requests or issues to suggest changes, improvements, or new features.
 
+This appears to be a list of shell scripts and configuration files for an agent or automation system, likely related to a game development project. Here's a breakdown of the script names and their possible purposes:
+
+**Agent-related scripts**
+
+* `agent-name.sh`: The main entry point for the agent.
+* `agent-step.sh`: A step in the agent's workflow or a specific action it takes.
+* `finalize-entry.sh` and `get-exocortexum.sh`: Scripts related to finalizing an entry or retrieving data from Exocortexum.
+* `initialize-agent.sh`: A script to initialize the agent (not explicitly listed, but implied by its name).
+
+**Host-related scripts**
+
+* `aurora.host`, `chronos.host`, `elysium.host`, and `nyx.host`: These are likely host configurations or settings for different agents or services.
+
+**Phext-related scripts**
+
+* `aurora.phext`, `chronos.phext`, `elysium.phext`, and `nyx.phext`: These are likely phext (plugin) configurations or settings for different agents or services.
+* `exo-step.sh` and `tyche.phext`: Scripts related to Exocortexum phext plugins.
+
+**Roster-related scripts**
+
+* `aurora.roster`, `chronos.roster`, `elysium.roster`, and `nyx.roster`: These are likely roster configurations or settings for different agents or services.
+
+**Other scripts**
+
+* `products.phext` and `results.phext`: Scripts related to product management or results tracking.
+* `launch-pod.sh`: A script to launch a pod (not explicitly defined in this list).
+* `list-spots.sh`, `maybe-think.sh`, `post-message.sh`, `process.sh`, `round-status.sh`, `sync.sh`, and `think.sh`: Scripts that seem unrelated to the agent or host configurations.
+* `800xp: Steam Power - enables factories`: A comment indicating a specific feature (Steam Power) with an XP cost, which is not related to the scripts.
+
+This list appears to be organized by functionality or category, suggesting a structured approach to developing and managing agents in a game development project.
+
