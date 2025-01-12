@@ -17,3 +17,7 @@ while [ $CHANGED -gt 0 ]; do
   mv .exo-step .exo-prior
 done
 echo " [ $POD ]: Round $ROUND Complete."
+
+if [ $ROUND -eq 2 ]; then
+  ./system-install.sh
+fi

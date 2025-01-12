@@ -4,9 +4,23 @@
 2. Once all brains have been updated, we proceed to the next time step.
 3. This process operates on a pod-level, allowing each pod to experience time divergence.
 
+## Tech Stack
+
+* ollama-based LLM inference (vLLM support is being considered)
+* sq databases (.phext files)
+* shell scripts
+
 ## Epoch 1
 
 Epoch 1 runs from January 1, 2025 until March 14, 2025. This epoch focuses on building agent swarm technology that targets local compute.
+
+### Rounds 0, 1, and 2
+
+* Round 0: Initialization - agents are generated and form initial memories - this step is the most error-prone - you have to help nurture initial setup.
+* Round 1: Baseline Execution - you should run `agent-step.sh` manually for each agent in each pod to ensure that sq is functional.
+* Round 2: Goal verification - verifies that `exo-step.sh` runs to completion on each pod. You should review the git commits.
+
+At this point, your exollama cluster is operational, and exo-step.sh stops creating commits in this repo. Future rounds record work in `/usr/local/exollama`.
 
 ### Pods
 
