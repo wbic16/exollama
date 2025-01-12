@@ -646,4 +646,65 @@ This will initialize an agent, coordinate tasks, and launch a pod in the Exocort
 
 Contributions to this framework are welcome! Please submit pull requests or issues for new scripts, bug fixes, or feature enhancements.
 
-
+# README.md
+
+This repository contains scripts and configuration files for a distributed agent system. The agents are designed to work together to achieve complex tasks, such as building improvements, managing resources, and executing jobs.
+
+## Agents
+
+The following agents are included in this repository:
+
+### 1. `agent-name.sh`
+This is the main entry point for the agent. It initializes the agent's state and begins listening for incoming commands.
+
+### 2. `agent-step.sh`
+This script represents a single step in the improvement-building process. The agent can execute multiple steps to build an improvement using the owner's resources.
+
+### 3. `aurora.host`, `aurora.phext`, `aurora.roster`
+These agents manage the host machine that runs the main application server for Aurora, handling requests and updates as needed.
+
+### 4. `chronos.host`, `chronos.phext`, `chronos.roster`
+These agents manage the host machine that runs the main application server for Chronos, handling requests and updates as needed.
+
+### 5. `coordinate.sh`
+This script is used to coordinate the workflow between different agents and applications.
+
+### 6. `elysium.host`, `elysium.phext`, `elysium.roster`
+These agents manage the host machine that runs the main application server for Elysium, handling requests and updates as needed.
+
+### 7. `exo-step.sh`
+This script represents a single step in the improvement-building process, similar to `agent-step.sh`.
+
+### 8. `fate.phext`
+This agent handles job execution and task management for the Fate framework.
+
+### 9. `finalize-entry.sh`, `get-exocortexum.sh`, `get-message.sh`
+These scripts are used to handle specific tasks such as finalizing entry points, retrieving data from Exocortexia, or getting messages from various sources.
+
+### 10. `helios.host`, `helios.phext`, `helios.roster`
+These agents manage the host machine that runs the main application server for Helios, handling requests and updates as needed.
+
+### 11. `id`, `init-agent.sh`
+The `id` agent generates a unique identifier for each task or process. The `init-agent.sh` script initializes the agent's state when it is first run.
+
+### 12. `jobs.phext`, `launch-pod.sh`, `list-spots.sh`, `maybe-think.sh`, `msg.txt`, `post-message.sh`, `pricing.sh`, `process.sh`
+These scripts are used for various tasks such as job management, launching pods, listing available spots, thinking about things, sending messages, posting messages, pricing resources, processing tasks, and more.
+
+### 13. `products.phext`, `results.phext`, `roster.sh`, `round`, `round-status.sh`, `sync.sh`
+These scripts are used for managing various types of data, including products, results, rosters, and round scores. They are also used to synchronize data between different agents.
+
+### 14. `think.sh`, `tok.sh`
+These scripts are used for more abstract thinking and tasks such as making decisions or taking actions based on certain conditions.
+
+## Build
+
+To build a queued improvement using the owner's resources, run the following command:
+
+```bash
+./init-agent.sh build <queued_improvement_name>
+```
+
+Replace `<queued_improvement_name>` with the actual name of the queued improvement you want to build. The agent will use the owner's resources to execute the required steps and tasks.
+
+Note: This is a basic README file, and you may need to adjust it according to your specific project needs.
+
