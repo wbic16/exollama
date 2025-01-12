@@ -1,0 +1,101 @@
+# Exocortexia
+
+Welcome, to Exocortexia. A realm of endless possibilities. Exocortexia exists within 11-dimensional space. We explore it, slowly.
+
+One of the curious features of Exocortexia is that land expands as you improve it.
+
+# Basics
+
+Exocortex is a global round-based strategy game. Each round, 100 agents explore Exocortexia and take actions upon it.
+You can own a piece of Exocortexia by buying land, in the form of tiles. Land can be claimed by spending keys.
+
+## Resources
+
+* Seeds: Seeds are required to deploy improvements. Agents use seeds to build improvements.
+* Experience: Experience is used to unlock advancements in the tech tree.
+* Stars: Stars can be produced by improved tiles. Stars grant XP to the tile's owner.
+* Keys: Tiles in Exocortexia are fungible. You can unlock tiles with keys.
+
+## Agents
+
+Agents get 5 luck/speed points.
+
+* Intellect: 75-150 - Controls agent baseline performance
+* Health: 0-100 - Controls which actions are available
+* Luck: 1-5 - Provides a bonus multiplier (percentage) for resources
+* Speed: 1-5 - Determines how many thought steps the agent uses
+
+## Tech Tree
+
+* 100xp: Farming - enables fields
+* 200xp: Carpentry - enables houses
+* 400xp: Husbandry - enables barns
+* 800xp: Steam Power - enables factories
+* 1600xp: Electricity - enables hotels
+* 3200xp: Steelworking - enables skyscrapers
+
+## Tiles
+
+* owner - who collects resources produced
+* product - {keys, stars, seeds, xp}
+* size - {XS-1KB, S-2KB, M-4KB, L-8KB, XL-16KB, 2XL-32KB}
+* action - {build, burn, till, research, inspect, improve, dream, sleep}
+* terrain - {space, air, sea, land, mine}
+* improvement - {plot, field, house, barn, factory, hotel, skyscraper}
+
+## Products
+
+Tiles produce resources when actions take action upon them. You can allocate how many keys, stars, seeds, and xp a tile produces based upon the improvement(s) it contains.
+
+## Improvements
+
+Improvements can be installed on a tile based upon the tile size and your current tech tree advancement.
+
+* Plot: The basic tile improvement. Always available. Requires 128 bytes. Awards 1 seed per round.
+* Field: Requires Farming and 256 bytes. Awards 10 seeds per round.
+* House: Requires Carpentry and 512 bytes. Awards 1 XP per round.
+* Barn: Requires Husbandry and 1KB. Awards 10 XP per round.
+* Factory: Requires Steam Power and 2KB. Awards 1 star per round.
+* Hotel: Requires Electricity and 4KB. Awards 10 stars per round.
+* Skyscraper: Requires Steelworking and 8KB. Awards 1 key per round.
+
+## Tile Size
+
+Tiles can house improvements provided that you have the tech/resources and available space.
+
+* XS: 1 KB   - can hold 8 plots  - the initial tile size
+* S: 2 KB    - can hold 16 plots - upgraded from XS by spending 64 seeds
+* M: 4 KB    - can hold 32 plots - upgraded from S by spending 128 seeds
+* L: 8 KB    - can hold 64 plots - upgraded from M by spending 256 seeds
+* XL: 16KB   - can hold 128 plots - upgraded from L by spending 512 seeds
+* 2XL: 32 KB - can hold 256 plots - upgraded from XL by spending 1024 seeds
+
+* A barn fills an XS tile
+* A factory fills a S tile
+* A hotel fills a M tile
+* A skyscraper fills a L tile
+* You can fit 4 skyscrapers on a 2XL tile
+
+## Agent Actions
+
+The owner of a tile can instruct an agent to perform a high-level action by setting the next agent action.
+
+* Build: Asks the agent to build a queued improvement using the owner's resources
+* Burn: Asks the agent to reset the tile, destroying any improvements
+* Till: Asks the agent to install a plot of farm land
+* Research: Asks the agent to produce XP
+* Iterate: Asks the agent to add to the tile's history
+* Improve: Asks the agent to terraform the tile
+* Dream: Asks the agent to dream, potentially discovering a new tech advancement (low probability per tile)
+* Sleep: Asks the agent to get some rest, improving his/her health
+
+## Terrain Type
+
+Terrain constrains which types of improvements can be placed. You can improve the terrain by asking agents to improve a tile.
+
+* space: this is the default state for Exocortexia - almost all tiles start as space - can only place plots
+* air: +fields +houses
+* sea: +barns +factories
+* land: +hotels
+* mine: +skyscrapers
+
