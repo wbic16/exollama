@@ -142,3 +142,56 @@ Aiden's charming personality and talent for depthful characterizations have made
 
 **Motivations:** Agent Hotel's primary motivation stems from a deep-seated need for justice – driven by the losses they suffered in their childhood. They're fiercely dedicated to uncovering the truth behind every case, no matter how complex or seemingly insurmountable it may be.
 
+# Elysium Agent System
+
+## Overview
+
+The Elysium agent system is a network of agents that work together to manage various tasks and provide features for a larger application or game. This README provides an overview of the different components, their purposes, and how they interact with each other.
+
+## Components
+
+### Agents
+
+* `agent-name.sh`: The main entry point for each agent.
+* `agent-step.sh`: A script that defines the steps to be taken by the agent.
+* `coordinate.sh`, `maybe-think.sh`, `think.sh`, `process.sh`, and `finalize-entry.sh`: Scripts that are called in sequence by an agent, performing various tasks such as coordinating with other agents or updating the system state.
+
+### Hosts
+
+* `aurora.host`, `chronos.host`, `elysium.host`, `helios.host`, `nyx.host`, and `tyche.host`: These represent the hosts in the Elysium system, each of which runs an agent.
+* `exocortexia.phext`, `fate.phext`, `get-exocortexum.sh`, `post-message.sh`, `pricing.sh`, and `tok.sh`: These are related to a specific host (Exo-Cortexia) but do not represent separate agents. They can be used by agents running on the Exo-Cortexia host.
+
+### Phexts
+
+* `aurora.phext`, `chronos.phext`, `elysium.phext`, `helios.phext`, `nyx.phext`, and `tyche.phext`: These represent phexts, which are used to extend the capabilities of hosts. They can be used by agents running on their corresponding host.
+
+### Rosters
+
+* `aurora.roster`, `chronos.roster`, `elysium.roster`, `helios.roster`, `nyx.roster`, and `tyche.roster`: These represent the rosters, which contain information about the hosts in the system. They can be used by agents to determine their role or responsibilities.
+
+### Other Files
+
+* `list-spots.sh`: A script that lists available spots.
+* `launch-pod.sh`: A script that launches a new pod.
+* `pod-manifest.txt`, `pod-status.sh`, and `round.sh`:
+	+ `pod-manifest.txt`: A file containing the manifest for a new pod.
+	+ `pod-status.sh`: A script that displays the status of pods.
+	+ `round.sh`: A script that manages rounds.
+
+### How It Works
+
+The Elysium agent system works as follows:
+
+1. Agents on each host perform their designated tasks, such as coordinating with other agents or updating the system state.
+2. The `coordinate.sh`, `maybe-think.sh`, `think.sh`, `process.sh`, and `finalize-entry.sh` scripts are called in sequence by an agent to perform complex tasks.
+3. Phexts are used to extend the capabilities of hosts, allowing them to perform more advanced functions.
+4. Rosters contain information about the hosts in the system, which is used by agents to determine their role or responsibilities.
+
+## Stars
+
+Stars can be produced by improved tiles and grant XP to the tile's owner.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the Elysium agent system, please fork this repository and submit a pull request.
+
