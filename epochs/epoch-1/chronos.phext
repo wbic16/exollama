@@ -508,3 +508,65 @@ In the absence of this information, it's difficult to provide a more detailed ex
 
 These scripts and variables seem to be part of a larger system for managing resources, processing data, and interacting with cloud providers. The `agent-name`, `aurora.host`, `chronos.host`, etc., suggest that this is an automation framework, possibly built using containerization or orchestration tools like Kubernetes.
 
+# Agent Documentation
+
+This repository contains scripts and configuration files for an agent in a larger system. The agent is responsible for managing and coordinating various aspects of the system.
+
+## Scripts
+
+The following scripts are part of this repository:
+
+### Agent-related scripts
+
+* `agent-name.sh`: A script that initializes and runs the agent.
+* `agent-step.sh`: A script that performs a specific step or task related to the agent's functionality.
+* `finalize-entry.sh`: A script that finalizes an entry in the system.
+
+### Roster management
+
+* `aurora.roster`, `chronos.roster`, `elysium.roster`, `nyx.roster`, and `tyche.roster`: Scripts that manage rosters for each corresponding entity (Aurora, Chronos, Elysium, Nyx, Tyche).
+* `roster.sh`: A script that updates a roster in the system.
+
+### Pod management
+
+* `launch-pod.sh`, `update-pod-manifest.sh`, and `pod-status.sh`: Scripts that manage pods in the system.
+* `pod-manifest.txt`: A file that contains information about a pod.
+
+### Message processing
+
+* `get-message.sh` and `post-message.sh`: Scripts that handle messages related to the agent's functionality.
+
+## Configuration files
+
+The following configuration files are part of this repository:
+
+* `products.phext`, `prices.phext`, and `results.phext`: Files that contain information about products, prices, and results.
+* `output.phext` and `sync.sh`: Scripts that synchronize data between different parts of the system.
+
+## Other scripts
+
+The following scripts are not directly related to the agent's functionality:
+
+* `maybe-think.sh`: A script that performs a task based on certain conditions.
+* `round` and `round-status.sh`: Scripts that manage rounds in the system.
+* `process.sh`: A script that performs a general task.
+* `jobs.phext`, `coords`, and `coordinate.sh`: Scripts that handle job-related tasks, coordinates, or are related to coordinate scripts.
+
+## External dependencies
+
+This repository may have external dependencies on other systems or services. The following entities are known to be part of the system:
+
+* `exo-step.sh`
+* `felix.phext`
+* `fate.phext`
+
+Note: The list of external dependencies and their corresponding names might change based on future updates to the system.
+
+## Release Notes
+
+Releases will be announced in the changelog file located at `.release-notes.md`.
+
+## Contributing
+
+Contributions are welcome. Please submit pull requests or issues to suggest changes, improvements, or new features.
+
