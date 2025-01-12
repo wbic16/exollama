@@ -195,20 +195,4 @@ Stars can be produced by improved tiles and grant XP to the tile's owner.
 
 Contributions are welcome! If you'd like to contribute to the Elysium agent system, please fork this repository and submit a pull request.
 
-That's an interesting approach to tile improvements. It sounds like you're proposing a system where the type of improvement that can be installed on a tile depends on both the size of the tile and the player's current technological advancements.
-
-To clarify, here are some possible ways this system could work:
-
-1. Tile Size Limitations: Certain improvements could only be installed on tiles of specific sizes. For example, a small improvement might be limited to 2x2 or 3x3 tiles, while a larger improvement might require a 4x4 tile.
-2. Tech Tree Requirements: The player's current technological advancements would determine which improvements can be installed. As the player progresses through the tech tree, new improvements become available for installation on existing tiles.
-3. Tiered Improvements: The system could use a tiered approach, where smaller improvements are only available at lower levels of technology, while larger and more complex improvements become available as the player advances further in the tech tree.
-4. Interactions between Tile Size and Tech Tree: The system could allow for interactions between tile size and tech tree progress. For example, a player might need to have a certain level of technology before they can install an improvement on a specific tile size.
-
-To take it a step further, you could also consider adding additional factors that affect which improvements can be installed, such as:
-
-* Resource availability: The system could require the player to have a certain amount of resources (e.g., gold, wood, stone) available before installing an improvement.
-* Tile placement: The system could restrict the placement of certain improvements on tiles based on their orientation or proximity to other tiles.
-* Building adjacency: The system could limit which improvements can be installed next to existing buildings.
-
-By incorporating these factors, you could create a more complex and nuanced system that rewards players for making strategic decisions about tile improvements.
-
+
