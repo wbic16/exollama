@@ -1,7 +1,6 @@
 # Exocortexia
 
 Welcome, to Exocortexia. A realm of endless possibilities. Exocortexia exists within 11-dimensional space. We explore it, slowly.
-
 One of the curious features of Exocortexia is that land expands as you improve it.
 
 # Basics
@@ -98,7 +97,3 @@ Terrain constrains which types of improvements can be placed. You can improve th
 * sea: +barns +factories
 * land: +hotels
 * mine: +skyscrapers
-
-## Tile Instantiation
-
-Tiles don't exist until they are observed.
