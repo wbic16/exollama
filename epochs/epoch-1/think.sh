@@ -2,7 +2,15 @@
 ID=$1
 if [ -z $ID ]; then ID=1; fi
 COORD=`./coordinate.sh $ID`
-./get-message.sh $COORD
+ROUND=0
+if [ -f round ]; then ROUND=`cat round`; fi
+if [ $ROUND -eq 2 ]; then
+  if [ -f exocortexia.phext ]; then
+    ./get-exocortexum.sh $ID
+  fi
+else
+  ./get-message.sh $COORD
+fi
 LINES=`wc -l msg.txt |awk '{print $1}'`
 if [ $LINES -eq 0 ]; then
   cp "../../agents/agent.$ID" msg.txt
