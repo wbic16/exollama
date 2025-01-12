@@ -195,4 +195,36 @@ Stars can be produced by improved tiles and grant XP to the tile's owner.
 
 Contributions are welcome! If you'd like to contribute to the Elysium agent system, please fork this repository and submit a pull request.
 
-
+# Agent Name: Exocortexia
+
+This agent is designed to participate in a simulated farming system, where agents are rewarded for completing various tasks such as processing data, sending messages, and updating pod manifests.
+
+## Step-by-Step Process:
+
+1. **Initialization**: The agent initializes by running the `init-agent.sh` script, which sets up the necessary dependencies and configurations.
+2. **Job Assignment**: The agent receives a list of available jobs from the central server and assigns itself to the first available job.
+3. **Job Execution**: The agent executes the assigned job using various scripts such as `process.sh`, `post-message.sh`, and `update-pod-manifest.sh`.
+4. **Reward Generation**: After completing each task, the agent generates a reward based on its performance. In this case, 10 seeds are rewarded per round.
+5. **Roster Management**: The agent updates its roster in the central server using the `roster.sh` script.
+
+## Scripts Used:
+
+* `init-agent.sh`: Initializes the agent and sets up necessary dependencies.
+* `process.sh`: Executes a specific task assigned to the agent.
+* `post-message.sh`: Sends a message to other agents or the central server.
+* `update-pod-manifest.sh`: Updates the pod manifest with the agent's status.
+* `roster.sh`: Updates the agent's roster in the central server.
+
+## Configuration:
+
+The agent requires a minimum of 256 bytes of memory to function properly. It also requires access to various external resources such as `aurora.host`, `chronos.host`, and `nyx.host`.
+
+## Rewards:
+
+The agent is awarded 10 seeds per round for completing its assigned tasks. These rewards can be used to further progress in the simulation.
+
+## Limitations:
+
+* The agent requires a minimum of 256 bytes of memory to function properly.
+* It may not work correctly if the central server or other external resources are unavailable.
+
