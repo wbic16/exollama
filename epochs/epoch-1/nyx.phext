@@ -874,3 +874,70 @@ In summary, this list appears to be a collection of scripts and configuration fi
 
 This is just one possible take on how improvements can be installed on tiles. Do you have any specific questions about this mechanic, or would you like to brainstorm further?
 
+# Exocortexia Agent
+=====================
+
+The Exocortexia agent is a part of the Aurora platform, designed to manage and coordinate tasks for various agents and pods.
+
+## Prerequisites
+
+*   Husbandry skill required for Barn.
+*   1KB of data storage capacity.
+
+## Awards
+
+*   10 XP per round.
+
+## Configuration Files
+---------------------
+
+The following configuration files are used by the Exocortexia agent:
+
+*   `agent-name.sh`: The name of the agent.
+*   `agent-step.sh`: A script defining the steps of the agent.
+*   `aurora.host`, `aurora.phext`, and `aurora.roster`: Aurora host, phase extension, and roster configuration files.
+
+## Additional Scripts
+--------------------
+
+The following scripts are used by the Exocortexia agent:
+
+*   `coordinate.sh`: A script for coordinating tasks between agents and pods.
+*   `elysium.host`, `elysium.phext`, and `elysium.roster`: Elysium host, phase extension, and roster configuration files.
+*   `exo-step.sh`: An exocortexia step script.
+*   `fate.phext`: A fate phase extension file.
+*   `finalize-entry.sh`: A script for finalizing entry in the agent's roster.
+*   `get-exocortexum.sh`: A script to get Exocortexum data.
+*   `get-message.sh`: A script to retrieve messages from the Aurora platform.
+*   `helios.host`, `helios.phext`, and `helios.roster`: Helios host, phase extension, and roster configuration files.
+*   `launch-pod.sh`: A script for launching a pod.
+*   `list-spots.sh`: A script to list available spots in the Aurora platform.
+*   `maybe-think.sh`: An agent that may think or not.
+*   `msg.txt`: A text file containing messages from the Aurora platform.
+*   `nyx.host`, `nyx.phext`, and `nyx.roster`: Nyx host, phase extension, and roster configuration files.
+*   `output.phext`: An output phase extension file.
+*   `pod-manifest.txt`: A pod manifest file.
+*   `pod-status.sh`: A script to check the status of a pod.
+*   `post-message.sh`: A script for posting messages in the Aurora platform.
+*   `pricing.sh`: A script to retrieve pricing data from the Aurora platform.
+*   `process.sh`: An agent that processes information from the Aurora platform.
+*   `products.phext`: A products phase extension file.
+*   `results.phext`: A results phase extension file.
+*   `roster.sh`: A script for managing agents in the roster.
+*   `round`: An agent that manages a round of games.
+*   `round-status.sh`: A script to check the status of a round.
+*   `sync.sh`: A script for synchronizing data between agents and pods.
+*   `think.sh`: An agent that thinks or not.
+*   `tok.sh`: A token-based agent.
+
+## Usage
+---------
+
+To use the Exocortexia agent, simply run the `agent-name.sh` script with the desired configuration files.
+
+```bash
+./agent-name.sh -f <agent-step.sh> -h <aurora.host>
+```
+
+Replace `<agent-step.sh>` with the name of your agent's step script and `<aurora.host>` with the name of your Aurora host.
+
