@@ -747,89 +747,30 @@ The README also mentions that the project has been upgraded from an "XS" version
 
 Overall, this README appears to be documentation for a Terraform project related to infrastructure as code management, with various scripts and configuration files that manage resources and hosts.
 
-# Aurora Agent Framework
-=====================================
+It appears you have a collection of shell scripts related to an "agent" system, likely used for managing and automating tasks. Here is a suggested organization and explanation of these files:
 
-The Aurora Agent Framework is a collection of shell scripts designed to facilitate the creation and management of agents in a distributed system. This framework is built on top of a modular architecture, allowing users to easily extend and customize their agents.
+### Agent Name and Initialization
+- `agent-name.sh`: The main entry point of your agent script, typically containing the script's name.
+- `init-agent.sh`: Initializes the agent before it starts running.
 
-## Agents
---------
+### Rosters
+- `chronos.roster`, `elysium.roster`, `exo-step.roster`, `nyx.roster`, `tyche.roster`: These files likely represent different "rosters" or groups of entities (like tasks, components, etc.) that are managed by the agent. Each roster specifies which entities should be added to a particular group.
 
-Each agent is represented by one or more shell scripts that define its behavior and interactions with the environment. The following are some examples of agent scripts provided in this framework:
+### Phext Files
+- `aurora.phext`, `elysium.phext`, `exo-step.phext`, `helios.phext`, `nyx.phext`, `tyche.phext`: These files appear to contain "phext" scripts, which are likely used for generating specific outputs or actions related to the agent. The names suggest connections between these entities and their respective components.
 
-### Chronos Agent
+### Other Scripts
+- `agent-step.sh`: A script that performs a step in the agent's workflow.
+- `finalize-entry.sh`, `get-exocortexum.sh`, `init-agent.sh`, `launch-pod.sh`, `list-spots.sh`, `maybe-think.sh`, `msg.txt`, `process.sh`, `post-message.sh`, `pricing.sh`, `round-status.sh`, `sync.sh`, `think.sh`, `tok.sh`: These scripts seem to cover various tasks the agent might perform, including initialization, execution of steps, communication (e.g., sending messages), and more.
 
-* `chronos.host`: Host configuration for the chronos agent
-* `chronos.phext`: Phoenix extension for the chronos agent (not yet implemented)
-* `chronos.roster`: Roster configuration for the chronos agent
-* `round-status.sh`: Function to calculate and display round status
-* `sync.sh`: Function to synchronize data with the host
+### Command Iteration
+- `iterate.sh` or `maybe-think.sh` is likely used to ask the agent to add to the tile's history as per the instructions given. This step seems crucial for updating the agent's status or progress over time.
 
-### Elysium Agent
+### Pod Management
+- `pod-manifest.txt`, `launch-pod.sh`, `output.phext`: These scripts are involved in managing a "pod" - likely a group of tasks or components that can be managed and executed together as part of an application or system. 
 
-* `elysium.host`: Host configuration for the elysium agent
-* `elysium.phext`: Phoenix extension for the elysium agent (not yet implemented)
-* `elysium.roster`: Roster configuration for the elysium agent
-* `maybe-think.sh`: Function to perform a random action or not
+### Iteration and Coordination
+The presence of coordination steps like `coordinate.sh` suggests the use of some form of coordination mechanism to manage these various scripts' execution, possibly for parallel processing or task management.
 
-### Helios Agent
-
-* `helios.host`: Host configuration for the helios agent
-* `helios.phext`: Phoenix extension for the helios agent (not yet implemented)
-* `helios.roster`: Roster configuration for the helios agent
-* `post-message.sh`: Function to post a message after a certain condition is met
-
-### Nyx Agent
-
-* `nyx.host`: Host configuration for the nyx agent
-* `nyx.phext`: Phoenix extension for the nyx agent (not yet implemented)
-* `nyx.roster`: Roster configuration for the nyx agent
-* `think.sh`: Function to perform a random action
-
-### Other Agents
-
-* `agent-name.sh`: Basic agent script template
-* `agent-step.sh`: Script that defines an agent's step behavior
-* `initialize.sh`: Function to initialize the agent
-* `finalize-entry.sh`: Function to finalize the entry of the agent
-
-## Tasks and Functions
---------------------
-
-The following are some examples of tasks and functions provided in this framework:
-
-### Utility Scripts
-
-* `get-message.sh`: Function to retrieve a message from a file or database
-* `launch-pod.sh`: Function to launch a pod (not yet implemented)
-* `list-spots.sh`: Function to list available spots (not yet implemented)
-* `output.phext`: Function to output the results of a task
-
-### Roster and Phoenix Extensions
-
-* `coordinate.sh`: Script that defines a roster for an agent
-* `process.sh`: Script that defines a phoenix extension for an agent
-* `results.phext`: Function to process and display results
-* `round-status.sh`: Function to calculate and display round status
-* `sync.sh`: Function to synchronize data with the host
-
-### Finalizers and Initiators
-
-* `finalize-entry.sh`: Function to finalize the entry of an agent
-* `initialize.sh`: Function to initialize an agent
-* `update-pod-manifest.sh`: Function to update the pod manifest (not yet implemented)
-
-## Research Notes
------------------
-
-For future research directions, we can explore:
-
-* Developing more advanced Phoenix extensions that allow for more complex interactions with the environment.
-* Implementing a more robust and efficient task queue system that allows for multiple agents to interact with each other in a coordinated manner.
-* Exploring new ways to extend and customize agent behavior using machine learning algorithms.
-
-## Contributing
-------------
-
-This framework is designed to be extensible and modular, allowing users to easily contribute new agents and features. If you're interested in contributing, please fork this repository and submit a pull request with your changes.
+This organization makes sense if you're building a distributed system where tasks are executed in parallel across different "pods" or components. Each script likely has its specific role in managing and executing these tasks efficiently.
 
