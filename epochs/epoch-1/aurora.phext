@@ -871,3 +871,50 @@ Note: This is just an example README file, and you should modify it to fit your 
 
 The list includes various scripts and configuration files that work together to manage a distributed task execution system. These files likely interact with each other through message passing, data synchronization, or task processing.
 
+# README.md
+
+## Agent Script Directory
+
+This directory contains a collection of shell scripts used to manage the setup and operation of an agent-based system.
+
+### Scripts
+
+The following scripts are included in this directory:
+
+* `agent-name.sh`: Sets the name of the agent.
+* `agent-step.sh`: Defines the steps taken by the agent.
+* `aurora.host`, `aurora.phext`, `aurora.phext.history`, `aurora.roster`, `chronos.host`, `chronos.phext`, `chronos.roster`: Scripts related to host management for Aurora and Chronos.
+* `coordinate.sh`: Coordinates actions between agents and other systems.
+* `elysium.host`, `elysium.phext`, `elysium.roster`: Scripts related to host management for Elysium.
+* `exo-step.sh`: Defines the steps taken by the Exocortexia agent.
+* `fate.phext`, `finalize-entry.sh`, `get-exocortexum.sh`, `get-message.sh`: Scripts related to fate and message management.
+* `helios.host`, `helios.phext`, `helios.roster`: Scripts related to host management for Helios.
+* `jobs.phext`, `launch-pod.sh`, `list-spots.sh`, `maybe-think.sh`, `msg.txt`, `nyx.host`, `nyx.phext`, `nyx.roster`, `output.phext`, `pod-manifest.txt`, `pod-status.sh`, `post-message.sh`, `pricing.sh`, `process.sh`: Scripts related to various tasks and operations.
+* `products.phext`, `results.phext`, `roster.sh`, `round`, `round-status.sh`, `sync.sh`, `think.sh`, `tok.sh`, `tyche.host`, `tyche.phext`, `tyche.roster`: Scripts related to product management, results tracking, and roster management.
+* `update-pod-manifest.sh`: Updates the pod manifest.
+
+### Services
+
+The following services are provided by these scripts:
+
+* **Aurora**: Manages host setup for Aurora.
+* **Chronos**: Manages host setup for Chronos.
+* **Elysium**: Manages host setup for Elysium.
+* **Exocortexia**: Performs steps defined in the `exo-step.sh` script.
+* **Fate**: Manages message and fate-related tasks.
+* **Helios**: Manages host setup for Helios.
+
+### Usage
+
+To use these scripts, navigate to this directory and run the desired script using the `./` notation. For example:
+```bash
+./launch-pod.sh
+```
+This will launch a pod using the `launch-pod.sh` script.
+
+### Notes
+
+* Some scripts may require configuration or setup before running.
+* Consult the individual script documentation for more information on usage and configuration.
+* These scripts are designed to be modular and reusable, making it easy to integrate them into larger systems.
+
