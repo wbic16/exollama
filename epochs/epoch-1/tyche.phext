@@ -228,3 +228,58 @@ The agent is awarded 10 seeds per round for completing its assigned tasks. These
 * The agent requires a minimum of 256 bytes of memory to function properly.
 * It may not work correctly if the central server or other external resources are unavailable.
 
+**Hotel Agent System**
+
+Overview
+----------
+
+The hotel agent system is a complex network of scripts and tools designed to manage the booking process for an futuristic hotel resort. The system utilizes various agents, each responsible for specific tasks such as managing inventory, handling payments, and providing exceptional customer service.
+
+Agents
+--------
+
+### Hotel Agents
+
+1. `agent-name.sh`: Manages the guest's check-in and check-out processes.
+2. `agent-step.sh`: Coordinates the guest's stay and ensures a seamless experience.
+3. `chronos.host`, `chronos.phext`, `chronos.roster`: Manage the hotel's timekeeping system, including scheduling appointments and managing staff schedules.
+4. `exo-step.sh`: Ensures that guests receive an optimal stay by monitoring their preferences and adjusting services accordingly.
+5. `fate.phext`: Assigns a fate to each guest based on their preferences and past stays.
+
+### Supporting Agents
+
+1. `coordonate.sh`: Coordinates the hotel's location and navigation systems.
+2. `elysium.host`, `elysium.phext`, `elysium.roster`: Manage the hotel's recreational facilities, ensuring that guests have access to a wide range of amenities.
+3. `exo-cortexia.phext`: Provides an AI-powered concierge service, assisting guests with their every need.
+4. `get-exocortexum.sh`: Retrieves information about exocortexum, a rare and exotic resource found in the hotel's surroundings.
+5. `get-message.sh`: Delivers messages to guests via various channels, including holographic projections and neural interfaces.
+
+### Utility Agents
+
+1. `hello.sh`, `output.phext`, `pod-manifest.txt`: Manage the hotel's public image and provide information about the resort's amenities.
+2. `launch-pod.sh`: Launches a simulated environment for testing and training purposes.
+3. `list-spots.sh`: Lists available rooms and accommodations in the hotel.
+4. `maybe-think.sh`, `msg.txt`: Generates random responses to guests' queries, adding a touch of whimsy to the hotel's atmosphere.
+5. `process.sh`: Processes payments and manages the hotel's financial transactions.
+6. `products.phext`, `pricing.sh`, `results.phext`: Manages the hotel's product offerings, pricing, and customer feedback.
+
+### Maintenance Agents
+
+1. `finalize-entry.sh`: Finalizes guest check-in and prepares rooms for occupancy.
+2. `init-agent.sh`: Initializes the hotel's systems and agents before each day.
+3. `jobs.phext`, `post-message.sh`, `sync.sh`: Schedules tasks and updates various logs throughout the day.
+4. `round-status.sh`: Monitors the hotel's operational status in real-time, ensuring that all systems are functioning smoothly.
+
+### External Agents
+
+1. `(tok.sh)` : Handles communication with external systems.
+2. `tyche.host`, `tyche.phext`, `tyche.roster` : Manages the hotel's relationships with other entities and organizations.
+
+Requirements
+------------
+
+The hotel agent system requires:
+
+* Electricity: The system operates on electricity, requiring a reliable power supply to function properly.
+* 4KB of storage space: Each script and tool must be stored in memory (RAM) for optimal performance.
+
