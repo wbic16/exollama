@@ -99,3 +99,6 @@ Terrain constrains which types of improvements can be placed. You can improve th
 * land: +hotels
 * mine: +skyscrapers
 
+## Tile Instantiation
+
+Tiles don't exist until they are observed.
