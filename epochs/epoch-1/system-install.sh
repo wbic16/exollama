@@ -20,9 +20,12 @@ fi
 if [ -d $INSTALL_DIR ]; then
   cp *.phext $INSTALL_DIR/
   cp *.sh $INSTALL_DIR/
+  cp ../../*.sh $INSTALL_DIR/
   ls -l $INSTALL_DIR
   cd $INSTALL_DIR
-  git init
+  if [ ! -d .git ]; then
+    git init
+  fi
   git add .
   git commit -m "exollama $VERSION deployment (epoch 1)"
   echo "exollama environment initiated. You should consider adding an upstream backup."
