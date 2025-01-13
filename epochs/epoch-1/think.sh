@@ -12,7 +12,7 @@ else
   ./get-message.sh $COORD
 fi
 EXOLLAMA_ROOT="../.."
-if [ -f "/usr/local/exollama" ]; then
+if [ -d "/usr/local/exollama" ]; then
   EXOLLAMA_ROOT="/usr/local/exollama"
 fi
 LINES=`wc -l msg.txt |awk '{print $1}'`

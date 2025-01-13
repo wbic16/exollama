@@ -2,7 +2,7 @@
 ID=$1
 MODEL=$2
 EXOLLAMA_ROOT="../.."
-if [ -f "/usr/local/exollama" ]; then
+if [ -d "/usr/local/exollama" ]; then
   EXOLLAMA_ROOT="/usr/local/exollama"
 fi
 NAME=`cd $EXOLLAMA_ROOT && ./verify-agent.sh $ID |grep 'Name:' |sed 's/Name: //g'`

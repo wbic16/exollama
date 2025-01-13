@@ -1,6 +1,6 @@
 #!/bin/sh
 EXOLLAMA_ROOT="../.."
-if [ -f "/usr/local/exollama" ]; then
+if [ -d "/usr/local/exollama" ]; then
   EXOLLAMA_ROOT="/usr/local/exollama"
 fi
 if [ -f $EXOLLAMA_ROOT/agents/agent.$1 ]; then

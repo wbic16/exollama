@@ -4,7 +4,7 @@ if [ ! -f /etc/exollama/pod.id ]; then
   exit 1
 fi
 EXOLLAMA_ROOT="../.."
-if [ -f "/usr/local/exollama" ]; then
+if [ -d "/usr/local/exollama" ]; then
   EXOLLAMA_ROOT="/usr/local/exollama"
 fi
 POD=`$EXOLLAMA_ROOT/pod-name.sh`
