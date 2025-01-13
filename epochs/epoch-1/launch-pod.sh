@@ -3,7 +3,11 @@ if [ ! -f /etc/exollama/pod.id ]; then
   echo "Error: you need to install a pod on this machine first."
   exit 1
 fi
-POD=`../../pod-name.sh`
+EXOLLAMA_ROOT="../.."
+if [ -f "/usr/local/exollama" ]; then
+  EXOLLAMA_ROOT="/usr/local/exollama"
+fi
+POD=`$EXOLLAMA_ROOT/pod-name.sh`
 if [ ! -f "$POD.phext" ]; then
   echo "Unable to locate $POD."
   exit 1

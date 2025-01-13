@@ -32,7 +32,11 @@ if [ ! -f "/etc/exollama/pod.id" ]; then
   echo "Error: You need to run install.sh first."
   exit 1
 fi
-POD=`../../pod-name.sh`
+EXOLLAMA_ROOT="../.."
+if [ -f "/usr/local/exollama" ]; then
+  EXOLLAMA_ROOT="/usr/local/exollama"
+fi
+POD=`$EXOLLAMA_ROOT/pod-name.sh`
 ./pod-status.sh
 if [ -f .exosync ]; then
   ELAPSED=`stat -c %Y .exosync`

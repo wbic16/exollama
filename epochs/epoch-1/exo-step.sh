@@ -2,7 +2,11 @@
 CHANGED=1
 ROUND=0
 if [ -f round ]; then ROUND=`cat round`; fi
-POD=`../../pod-name.sh`
+EXOLLAMA_ROOT="../.."
+if [ -f "/usr/local/exollama" ]; then
+  EXOLLAMA_ROOT="/usr/local/exollama"
+fi
+POD=`$EXOLLAMA_ROOT/pod-name.sh`
 if [ -f .exo-step ]; then
   mv .exo-step .exo-prior
 fi

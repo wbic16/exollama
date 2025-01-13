@@ -11,17 +11,21 @@ if [ $ROUND -eq 2 ]; then
 else
   ./get-message.sh $COORD
 fi
+EXOLLAMA_ROOT="../.."
+if [ -f "/usr/local/exollama" ]; then
+  EXOLLAMA_ROOT="/usr/local/exollama"
+fi
 LINES=`wc -l msg.txt |awk '{print $1}'`
 if [ $LINES -eq 0 ]; then
-  cp "../../agents/agent.$ID" msg.txt
+  cp "$EXOLLAMA_ROOT/agents/agent.$ID" msg.txt
 fi
 TEXT=`cat msg.txt`
 ROUND=0
 if [ -f round ]; then ROUND=`cat round`; fi
 echo " [ $NAME ]: Round $ROUND"
-../../l2.sh "$TEXT" >msg.txt
+$EXOLLAMA_ROOT/l2.sh "$TEXT" >msg.txt
 cat msg.txt
 ./post-message.sh $COORD
 
-POD=`../../pod-name.sh`
+POD=`$EXOLLAMA_ROOT/pod-name.sh`
 sq save $POD.phext
