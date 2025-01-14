@@ -1,4 +1,12 @@
-## exollama
+# exollama
+
+Exollama provides a collection of local inference tools, designed to help bootstrap AGI on a budget.
+
+* llama2.cu allows you to target an NVidia GPU using a plain C project (the genesis of this project)
+* ollama allows you to target either CPU or GPU resources
+* shell scripts: see `epochs/epoch-1/system-install.sh`
+
+## A Special Fork
 
 Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models.
 
