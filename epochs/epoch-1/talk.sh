@@ -15,4 +15,4 @@ SERIES=`./agent-series.sh $ID`
 SHELF=`./agent-shelf.sh $ID`
 LIBRARY=`./agent-library.sh $ID`
 SCROLL=$(($SCROLL+1))
-echo "Next Coor: $LIBRARY.$SHELF.$SERIES/$COLLECTION.$VOLUME.$BOOK/$CHAPTER.$SECTION.$SCROLL"
+echo "Next Coord: $LIBRARY.$SHELF.$SERIES/$COLLECTION.$VOLUME.$BOOK/$CHAPTER.$SECTION.$SCROLL"
