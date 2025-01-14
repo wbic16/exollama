@@ -18,11 +18,7 @@ else
   exit 0
 fi
 if [ -d $INSTALL_DIR ]; then
-  cp *.phext $INSTALL_DIR/
-  cp *.sh $INSTALL_DIR/
-  cp ../../*.sh $INSTALL_DIR/
-  cp -R ../../agents/ $INSTALL_DIR/agents/
-  ls -l $INSTALL_DIR
+  ./deploy.sh $INSTALL_DIR
   cd $INSTALL_DIR
   if [ ! -d .git ]; then
     git init
