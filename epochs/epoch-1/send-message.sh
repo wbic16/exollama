@@ -6,7 +6,7 @@ if [ -z $PHEXT ]; then
   exit 1
 fi
 COORDINATE=$3
-MESSAGE=$4
+MESSAGE=`echo "$4" |sed 's/ /+/g'`
 if [ -z $COORDINATE ]; then
   COORDINATE="1.1.1/1.1.1/1.1.1"
 fi
