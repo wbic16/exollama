@@ -5,9 +5,12 @@ if [ "x$1" = "x" ]; then
 else
   INSTALL_DIR=$1
 fi
-cp *.phext $INSTALL_DIR/
+HAVE_DATA=`wc -l $INSTALL_DIR/*.phext`
+if [ $HAVE_DATA -eq 0 ]; then
+  cp *.phext $INSTALL_DIR/
+  cp -R ../../agents/ $INSTALL_DIR/agents/
+fi
 cp *.sh $INSTALL_DIR/
 cp *.inc $INSTALL_DIR/
 cp ../../*.sh $INSTALL_DIR/
-cp -R ../../agents/ $INSTALL_DIR/agents/
 ls -l $INSTALL_DIR
