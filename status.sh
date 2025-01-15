@@ -17,3 +17,4 @@ fi
 echo "exollama v$VERSION"
 echo "Pod: $POD"
 echo "Round: $ROUND"
+echo "Branch: `git branch --show-current`"
