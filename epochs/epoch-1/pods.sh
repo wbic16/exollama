@@ -12,8 +12,7 @@ do
     if [ ! -d .pods/$ID ]; then
       mkdir .pods/$ID
     fi
-    cd .pods/$ID
-    sq $PORT >output.txt 2>error.txt &
-    cd ../..
+    killall sq
+    sq $PORT >./pods/$ID/output.txt 2>./pods/$ID/error.txt &
   fi
 done
