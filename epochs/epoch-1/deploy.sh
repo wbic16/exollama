@@ -10,6 +10,7 @@ if [ $HAVE_DATA -eq 0 ]; then
   cp *.phext $INSTALL_DIR/
   cp -R ../../agents/ $INSTALL_DIR/agents/
 fi
+cp el-version $INSTALL_DIR/
 cp *.sh $INSTALL_DIR/
 cp *.inc $INSTALL_DIR/
 cp ../../*.sh $INSTALL_DIR/
