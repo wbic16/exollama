@@ -13,7 +13,7 @@ do
       mkdir .pods/$ID
     fi
     cd .pods/$ID
-    sq $PORT >output.txt 2>&error.txt &
+    sq $PORT >output.txt 2>error.txt &
     cd ../..
   fi
 done
