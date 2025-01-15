@@ -2,6 +2,7 @@
 source exollama.inc
 cd $EXOLLAMA_ROOT
 if [ ! -d .pods ]; then mkdir .pods; fi
+killall sq
 for ROW in `ls -1 agents`
 do
   HAVE_THOUGHTS=`echo $ROW |grep -c '\.thought'`
@@ -12,7 +13,6 @@ do
     if [ ! -d .pods/$ID ]; then
       mkdir .pods/$ID
     fi
-    killall sq
-    sq $PORT >./pods/$ID/output.txt 2>./pods/$ID/error.txt &
+    sq $PORT >.pods/$ID/output.txt 2>.pods/$ID/error.txt &
   fi
 done
