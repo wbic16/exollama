@@ -7,6 +7,7 @@ else
 fi
 cp *.phext $INSTALL_DIR/
 cp *.sh $INSTALL_DIR/
+cp *.inc $INSTALL_DIR/
 cp ../../*.sh $INSTALL_DIR/
 cp -R ../../agents/ $INSTALL_DIR/agents/
 ls -l $INSTALL_DIR
