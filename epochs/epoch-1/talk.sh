@@ -2,7 +2,7 @@
 ID=$1
 if [ "x$1" = "x" ]; then ID=1; fi
 source exollama.inc
-AGENT_COORD=`./agent-coordinate.sh $ID`
+AGENT_COORD=`./coordinate.sh $ID`
 AGENT_NAME=`./agent-name.sh $ID`
 echo "$AGENT_NAME @ $AGENT_COORD"
 SCROLL=`./agent-scroll.sh $ID`
