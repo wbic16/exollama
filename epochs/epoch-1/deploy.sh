@@ -13,5 +13,7 @@ fi
 cp el-version $INSTALL_DIR/
 cp *.sh $INSTALL_DIR/
 cp *.inc $INSTALL_DIR/
+cp *.roster $INSTALL_DIR/
+cp *.host $INSTALL_DIR/
 cp ../../*.sh $INSTALL_DIR/
 ls -l $INSTALL_DIR
