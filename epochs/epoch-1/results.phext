@@ -15,3 +15,4 @@ January 14: Created pods.sh and fetch-message.sh
 January 15: Added ports.html (exocortical downstream)
 January 16: Started on user deployment and docker integration
 January 17: Added test.cu and rag.py/rag.sh in exollama
+January 18: Confirmed tinyllama works well on rpi4/5
