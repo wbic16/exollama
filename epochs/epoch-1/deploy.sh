@@ -16,4 +16,8 @@ cp *.inc $INSTALL_DIR/
 cp *.roster $INSTALL_DIR/
 cp *.host $INSTALL_DIR/
 cp ../../*.sh $INSTALL_DIR/
+if [ ! -d $INSTALL_DIR/books ]; then
+  mkdir $INSTALL_DIR/books
+  cp books/*.phext $INSTALL_DIR/books/
+fi
 ls -l $INSTALL_DIR
