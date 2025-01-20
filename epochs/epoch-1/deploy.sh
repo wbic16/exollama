@@ -20,4 +20,8 @@ if [ ! -d $INSTALL_DIR/books ]; then
   mkdir $INSTALL_DIR/books
   cp books/*.phext $INSTALL_DIR/books/
 fi
+if [ ! -d $INSTALL_DIR/phext-howto ]; then
+  mkdir $INSTALL_DIR/phext-howto
+  cp phext-howto/*.phext $INSTALL_DIR/phext-howto/
+fi
 ls -l $INSTALL_DIR
