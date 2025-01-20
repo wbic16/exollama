@@ -24,4 +24,5 @@ if [ ! -d $INSTALL_DIR/phext-howto ]; then
   mkdir $INSTALL_DIR/phext-howto
 fi
 cp phext-howto/*.phext $INSTALL_DIR/phext-howto/
+cp phext-howto/*.rs $INSTALL_DIR/phext-howto/
 ls -l $INSTALL_DIR
