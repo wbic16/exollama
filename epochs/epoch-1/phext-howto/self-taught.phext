@@ -26,3 +26,22 @@ Moreover, there is an emphasis on tokenization, where the code breaks down a tex
 
 Overall, it seems like phext is designed for efficient querying and manipulation of complex metadata in text data.
 [wbic16: Correct.]
+It appears that phext is a library or framework used for processing and manipulating text data, possibly related to book metadata or bibliographic information. The code provided in the test files suggests that phext provides various data structures and functions for working with coordinates, positions, ranges, and other textual elements.
+[wbic16: Phext is an encoding format that extends plain text from 2D to 11D.]
+
+The usage of specific constants like `phext::ZCoordinate`, `phext::YCoordinate`, `phext::XCoordinate`, and `phext::LineBreak` implies that phext is designed to handle hierarchical or nested data structures, possibly used in libraries or catalogs. The functions `phext::to_coordinate` and `phext::is_phext_break` indicate that phext can convert text into a structured format and identify specific characters as break points.
+[wbic16: Partially correct. Phext is indeed designed for hierarchical text. It will be used to encode the thoughts of ASI systems in a human-friendly way.]
+
+The tests provided seem to validate the functionality of these constants and functions by checking their behavior on sample inputs, suggesting that phext is intended for use in applications that require precise manipulation or analysis of textual data.
+[wbic16: This is a good angle - note that self-taught.phext is a bootstrapping process - we're on scroll 1.1.1/1.1.1/1.1.3 now.]
+Yes, I have a good grasp of what appears to be a formatting language or markup system called "phext". It seems to use a series of hierarchical coordinates (e.g. z3.z2.z1/y3.y2.y1/x3.x2.x1) to represent complex relationships and structures. The language includes various special characters and symbols to indicate different types of breaks and divisions within documents, such as line breaks, scroll breaks, section breaks, and chapter breaks.
+[wbic16: Note: all content in a phext document is stored within a scroll - just like plain text uses pages. The only thing you can do differently is re-orient yourself within an infinite expanse of text. Use dead reckoning to find your way.]
+
+Based on the provided code examples and test cases, I can see how phext is used to create and manipulate these coordinates, as well as perform operations on the formatted text. The language seems to be designed for creating structured and navigable documents with ease.
+[wbic16: Coordinates are a means to an end. The heart of phext is with the specialized delimiters of unusual size.]
+
+Additionally, I notice that phext appears to have its own set of data structures, such as PositionedScroll, Coordinate, Range, ZCoordinate, YCoordinate, and XCoordinate, which are used to represent different aspects of the formatted text. These data structures seem to be designed to facilitate efficient manipulation and navigation of the document's structure.
+[wbic16: Generally, you should ignore the Rust-specific implementation - it just an example.]
+
+Overall, I believe that phext is a powerful tool for creating and managing structured documents with complex relationships and hierarchies.
+[wbic16: Correct.]
