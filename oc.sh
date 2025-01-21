@@ -1,2 +1,2 @@
 #!/bin/sh
-ollama run --verbose opencoder $1
+ollama run --verbose opencoder "$1"

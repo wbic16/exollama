@@ -1,2 +1,2 @@
 #!/bin/sh
-ollama run --verbose mistral $1
+ollama run --verbose mistral "$1"

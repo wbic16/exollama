@@ -1,2 +1,2 @@
 #!/bin/sh
-ollama run --verbose llama3.2 $1
+ollama run --verbose llama3.2 "$1"
