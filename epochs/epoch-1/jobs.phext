@@ -1,11 +1,9 @@
 * stop spewing the console from sq
-* sq pull problem for un-initialized scrolls
-* agent DNA
 * agent config
+* agent DNA
 * divide and conquer workflows
 * network flow
 * chat interface
-* rest api (update hello-phext to use sq)
 * RFLs (Request for Learning)
 * 3-brain cycle
 * pod cycling
