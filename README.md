@@ -6,6 +6,55 @@ Exollama provides a collection of local inference tools, designed to help bootst
 * ollama allows you to target either CPU or GPU resources
 * shell scripts: see `epochs/epoch-1/system-install.sh`
 
+## shell scripts
+
+Scripts installed during deployment come from the root directory of this repo, and from epochs/epoch-1. A summary of each script is given below.
+
+* agent-name.sh: Displays the name of a given agent identified by ID
+* agent-step.sh: Runs the next agent step for a given agent ID
+* browse.sh: Browses for avahi services
+* coordinate.sh: Fetches an agent's next communication coordinate
+* deploy.sh: Deploys shell scripts to /usr/local/exollama
+* deps.sh: Installs SQ
+* embed.sh: Obtains embeddings for the given model from ollama
+* exo-step.sh: Runs the next pod step
+* fetch-message.sh: Fetches a message from an sq rest api endpoint
+* finalize-entry.sh
+* generate-agent.sh
+* get-exocortexum.sh
+* get-message.sh
+* init-agent.sh
+* install.sh
+* launch-pod.sh
+* list-agents.sh
+* list-spots.sh
+* maybe-think.sh
+* pod-name.sh
+* pods.sh
+* pod-status.sh
+* post-message.sh
+* pricing.sh
+* process.sh
+* rag.sh
+* render.sh
+* reset.sh
+* roster.sh
+* round-status.sh
+* run.sh
+* send-message.sh
+* setup.sh
+* status.sh
+* sync.sh
+* system-install.sh
+* talk.sh
+* teach.sh
+* test-cuda.sh
+* think.sh
+* tok.sh
+* update-pod-manifest.sh
+* user-setup.sh
+* verify-agent.sh
+
 ## A Special Fork
 
 Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models.
@@ -44,6 +93,8 @@ cd ..
 
 You can also run ollama for reference using the scripts noted below.
 
+* dq.sh: deepseek-r1:1.5b
+* ds.sh: deepseek-r1:8b
 * tl.sh: tinyllama
 * ml.sh: mistral
 * q2.sh: qwen2:7b
