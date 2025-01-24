@@ -18,3 +18,7 @@ January 17: Added test.cu and rag.py/rag.sh in exollama
 January 18: Confirmed tinyllama works well on rpi4/5
 January 19: Demo to family - focusing on hierarchical workflows - added books+RAG
 January 20: Focusing on phext reflection - nyx found a close description - added it to the training set - added sync.sh - created a poem
+January 21: Documented shell scripts
+January 22: Met with CodexOS about leveraging phext
+January 23: Shipped SQ v0.2.4 (sq slurp)
+January 24: Focusing on cluster maintenance
