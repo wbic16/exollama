@@ -11,3 +11,4 @@ pytorch_model.bin
 .silent
 *.soundex
 *.checksum
+exopod.service
