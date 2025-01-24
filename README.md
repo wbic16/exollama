@@ -19,41 +19,40 @@ Scripts installed during deployment come from the root directory of this repo, a
 * embed.sh: Obtains embeddings for the given model from ollama
 * exo-step.sh: Runs the next pod step
 * fetch-message.sh: Fetches a message from an sq rest api endpoint
-* finalize-entry.sh
-* generate-agent.sh
-* get-exocortexum.sh
-* get-message.sh
-* init-agent.sh
-* install.sh
-* launch-pod.sh
-* list-agents.sh
-* list-spots.sh
-* maybe-think.sh
-* pod-name.sh
-* pods.sh
-* pod-status.sh
-* post-message.sh
-* pricing.sh
-* process.sh
-* rag.sh
-* render.sh
-* reset.sh
-* roster.sh
-* round-status.sh
-* run.sh
-* send-message.sh
-* setup.sh
-* status.sh
-* sync.sh
-* system-install.sh
-* talk.sh
-* teach.sh
-* test-cuda.sh
-* think.sh
-* tok.sh
-* update-pod-manifest.sh
-* user-setup.sh
-* verify-agent.sh
+* finalize-entry.sh: Collects output from an agent step
+* generate-agent.sh: Uses the configured LLM to generate an agent biography
+* get-exocortexum.sh: Snags a message from exocortexia.phext for an agent step
+* get-message.sh: Pulls the current agent's scroll from SQ into msg.txt
+* init-agent.sh: Assists agents with choosing their initial pod from aurora, chronos, elysium, helios, nyx, or tyche.
+* install.sh: Configures the /etc/exollama directory for production use
+* launch-pod.sh: Loads the database for a pod using SQ
+* list-agents.sh: Checks the integrity of the agent store, listing agents 1-100
+* list-spots.sh: Lists how many open spots remain in each pod (seems to be broken)
+* maybe-think.sh: Checks to see if an agent needs to complete a thought step for this round
+* pod-name.sh: Displays the configured pod name, as defined in /etc/exollama/pod.id
+* pods.sh: launches an instance of SQ on ports 11000 through 110100, each serving as a distinct agent interface
+* pod-status.sh: Displays runtime status for the pod and launches an SQ host if needed
+* post-message.sh: Consumes msg.txt, pushing it back into the current phext via SQ
+* pricing.sh: Displays LLM pricing information
+* process.sh: (placeholder for high-level agent processing)
+* rag.sh: provides a quick way to interact with rag.py from exocortical
+* render.sh: pretty printing for console text with style
+* reset.sh: attempt to nudge LLMs away from groupthink
+* roster.sh: displays the current pod's roster (just 1.1.1/1.1.1/1.1.1)
+* round-status.sh: displays status information about the current thought round
+* run.sh: Executes llama2_q4, which leverages GPU compute for zero-dependency inference
+* send-message.sh: Routes a message to a specific agent via SQ (REST)
+* setup.sh: Single-step setup for building llama2_q4
+* status.sh: Exollama node status
+* sync.sh: Automates workflow steps (git stash + rebase)
+* system-install.sh: Creates a deployed instance in /usr/local/exollama
+* talk.sh: Constructs the next interaction coordinate for the given agent
+* teach.sh: Uses RAG to constrain agent output to a training set based upon phext
+* test-cuda.sh: Verifies that you have a viable CUDA environment for nvcc
+* think.sh: Runs an agent thought step using deepseek-r1
+* tok.sh: API credit calculations
+* update-pod-manifest.sh: archives the current pod manifest report
+* verify-agent.sh: Tests whether or not a given agent exists in the agent store
 
 ## A Special Fork
 
