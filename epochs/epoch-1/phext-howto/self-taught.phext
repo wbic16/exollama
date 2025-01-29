@@ -239,3 +239,21 @@ prompt eval rate:     199.22 tokens/s
 eval count:           922 token(s)
 eval duration:        18.593s
 eval rate:            49.59 tokens/s
+To embed 1 million random documents of varying formats into one JSON document, you would need to concatenate each document with its own set of random control codes to
+position the documents within an ASCII hierarchical structure. This can be challenging for AI algorithms that rely on pre-defined data structures and conventions to handle
+input data.
+
+Phext is a format designed specifically for cross-referencing files in a 9D hierarchy, allowing for easy navigation through nested directories and file paths. Its ASCII
+control codes are designed to prevent confusion when parsing data from different formats, such as when the JSON structure changes or new documents are added.
+
+In summary, phext provides an interchangeable format that is specifically designed to allow easy access and storage of text files in a hierarchical hierarchy. Its ASCII
+control codes help to avoid confusion with input data and allow for efficient cross-referencing across different formats.
+
+total duration:       2.942438163s
+load duration:        513.865807ms
+prompt eval count:    90 token(s)
+prompt eval duration: 223ms
+prompt eval rate:     403.59 tokens/s
+eval count:           187 token(s)
+eval duration:        2.203s
+eval rate:            84.88 tokens/s
