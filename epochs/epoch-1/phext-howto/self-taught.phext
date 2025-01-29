@@ -163,3 +163,51 @@ prompt eval rate:     92.05 tokens/s
 eval count:           348 token(s)
 eval duration:        14.05s
 eval rate:            24.77 tokens/s
+Phext represents a novel approach to data serialization by organizing information across multiple dimensions, from 2D up to 11D. This method aims to enhance both human
+readability and computational efficiency by allowing data to be structured in a spatially aware manner, which can be particularly beneficial for complex datasets with
+numerous attributes.
+
+### Key Concepts:
+
+1. **Dimensional Encoding**:
+   - Phext encodes data points across multiple dimensions, each representing groups of related attributes. This structure allows for efficient storage and retrieval of
+information.
+
+2. **Human Readability**:
+   - By organizing data spatially, Phext makes complex datasets more accessible to humans. Each dimension can be mapped back to the original attributes, facilitating easier
+comprehension.
+
+3. **Scalability and Efficiency**:
+   - The approach is designed to handle higher dimensions effectively, which can be advantageous for managing large datasets with many attributes.
+   - While higher dimensions might initially seem complex, Phext's structure aims to optimize storage and processing, though further exploration of its implementation would
+clarify these benefits.
+
+4. **Use Cases**:
+   - Applications involving multi-attribute data, such as user profiles or product listings, can benefit from Phext. It allows for efficient querying by navigating each
+dimension individually.
+
+### Considerations:
+
+1. **Implementation and Practicality**:
+   - The success of Phext may depend on its ability to handle scalability without overwhelming systems with complex structures.
+
+2. **Handling Incomplete Data**:
+   - Managing missing or inconsistent data across multiple dimensions could pose challenges, requiring robust mechanisms for dealing with such scenarios.
+
+3. **Trade-offs**:
+   - While higher dimensions offer flexibility, there's a risk of information fragmentation and the need to manage relationships between disconnected dimensions.
+
+### Conclusion:
+
+Phext presents a promising method for encoding and decoding data in multi-dimensional spaces, offering enhanced readability and efficiency. However, its effectiveness will
+depend on how it manages complexity, scalability, and usability across various applications. Further exploration through concrete examples and implementation details would
+provide deeper insights into its potential and limitations.
+
+total duration:       2m53.119704487s
+load duration:        2.296274821s
+prompt eval count:    43 token(s)
+prompt eval duration: 1.072s
+prompt eval rate:     40.11 tokens/s
+eval count:           1943 token(s)
+eval duration:        2m49.749s
+eval rate:            11.45 tokens/s
