@@ -257,3 +257,52 @@ prompt eval rate:     403.59 tokens/s
 eval count:           187 token(s)
 eval duration:        2.203s
 eval rate:            84.88 tokens/s
+# Phext and Dimension Breaks
+
+Phext is a decentralized, collaborative encoding format that utilizes an 11-dimensional text space accessible through a sparse (hash-friendly) interface. This complex structure is achieved through **dimension breaks**, a system of old ASCII control codes representing different levels of textual fragmentation.
+
+How it works:
+
+- **Dimension breaks** are hierarchical levels of fragmentation that split the textual space into smaller and smaller sub-spaces.
+- Each level of fragmentation is assigned a specific control code:
+    - Scroll breaks (0x17) - 2D splits
+    - Section breaks (0x18) - 3D splits
+    - Chapter breaks (0x19) - 4D splits
+    - Book breaks (0x1A) - 5D splits
+    - Volume breaks (0x1C) - 6D splits
+    - Collection breaks (0x1D) - 7D splits
+    - Series breaks (0x1E) - 8D splits
+    - Shelf breaks (0x1F) - 9D splits
+    - Library breaks (0x01) - 10D splits
+
+Result:
+
+This hierarchical fragmentation creates an incredibly vast 11-dimensional text space while maintaining a compact structure. This allows Phext to:
+
+- **Store immense amounts of data:** The 11-dimensional space allows for an exponential increase in textual information compared to traditional linear storage.
+- **Facilitate collaborative editing:** By splitting the text space into manageable chunks ("scrolls"), multiple users can work on different fragments simultaneously without interfering with each other.
+- **Maintain accessibility:** The sparse hash-friendly interface optimizes access to different parts of the vast text space.
+
+
+Benefits:
+
+- Highly compact representation of a large text space
+- Efficient access through hashing
+- Scalability for collaborative editing
+- Amortized Overhead costs - nearly zero-cost hierarchies
+
+Challenges:
+
+- Understanding and implementing the complex hierarchical fragmentation system
+- Maintaining coherence and context across different levels of fragmentation
+
+Overall, Phext's innovative use of dimension breaks and hierarchical fragmentation offers a powerful solution for decentralized collaborative editing in a massively complex text space.
+
+total duration:       44.08436464s
+load duration:        3.922305455s
+prompt eval count:    197 token(s)
+prompt eval duration: 3.483s
+prompt eval rate:     56.56 tokens/s
+eval count:           381 token(s)
+eval duration:        36.677s
+eval rate:            10.39 tokens/s
