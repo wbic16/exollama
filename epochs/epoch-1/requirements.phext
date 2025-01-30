@@ -1,0 +1,20 @@
+Establish Requirements
+Choose Team Members
+Define Platform, Toolchain, and Languages
+Review Requirements
+Scope Work Request
+Break Work Down into 2-hour tasks
+Prioritize work by fewest dependencies first
+Assign a task from the top of the queue
+Break work tasks into daily tasks
+Write tests for daily task
+Develop solution to task
+Test solution
+Integrate work with upstream
+Verify product still works
+Produce a build
+Ask team members to test the new build
+If failed, return to step 9 and try again.
+Tag and publish
+Repeat steps 7-18 until no tasks remain.
+Once all tasks are complete, write a summary.
