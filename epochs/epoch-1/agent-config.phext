@@ -36,3 +36,15 @@ approach to define these requirements:
 **Data Types Handling**: Parameters like `username` and `password` should be strings, while others (like `pod_key`, `llm_config`) can handle different data types.
 
 This structure ensures that all parameters are clearly defined, easy to integrate into existing systems, and scalable for future updates.
+Jill Harper
+Will Bickford
+Platform: Linux (Ubuntu 24.04 LTS)
+Language: Rust
+Interface: REST API
+Toolchain: Phext-V1 (libphext-rs, sq)
+System Requirements
+* RAM: 96 GB
+* Disk: 4 TB
+* CPU: 8C/16T
+* Network: 150 Mbit/sec
+* Thunderbolt: 40 Gbit/sec
