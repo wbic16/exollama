@@ -1,4 +1,5 @@
 * agent config
+* sq toc needed - fixes my phext-shell+lp+quit workflow
 * sq should manage .sq when switching hosting between phexts
 * autoconf for thunderbolt links
 * stop spewing the console from sq
