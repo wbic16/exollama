@@ -30,3 +30,5 @@ January 29: Starting thinking about mapping embedding vectors to phext - https:/
 January 30: Started scoping the multi-agent configuration format
 January 31: SQ v0.3.1 - faster cycling on phext scrolls via `sq toc`
 February 1: SQ v0.3.2 - auto-recover from .sq issues when issuing a viable bootstrapping command
+February 2: Thunderbolt configuration for faster inter-node mesh connections
+February 3: Cluster status snapshot
