@@ -32,3 +32,4 @@ January 31: SQ v0.3.1 - faster cycling on phext scrolls via `sq toc`
 February 1: SQ v0.3.2 - auto-recover from .sq issues when issuing a viable bootstrapping command
 February 2: thunderbolt links between nodes (40 Gbit/sec)
 February 3: Cluster status snapshot
+February 4: Added job-ratings.sh
