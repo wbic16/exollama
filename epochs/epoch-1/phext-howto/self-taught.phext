@@ -306,3 +306,21 @@ prompt eval rate:     56.56 tokens/s
 eval count:           381 token(s)
 eval duration:        36.677s
 eval rate:            10.39 tokens/s
+Phext is an encoding format designed for decentralized, collaborative storage and editing of large amounts of text data across an 11-dimensional hierarchical space. It utilizes **dimension breaks**, which are hierarchical levels of splitting the text into fragments (scrolls) to facilitate efficient access and collaboration among multiple users or systems.
+
+### Key Features of Phext
+
+#### **How it works:**
+- **Dimension breaks**: The format uses a series of hierarchical breaks, each
+assigned an ASCII control code:
+  - Scroll breaks (0x17): 2D splits
+  - Section breaks (0x18): 3D splits
+  - Chapter breaks (0x19): 4D splits
+  - Book breaks (0x1A): 5D splits
+  - Volume breaks (0x1C): 6D splits
+  - Collection breaks (0x1D): 7D splits
+  - Series breaks (0x1E): 8D splits
+  - Shelf breaks (0x1F): 9D splits
+  - Library breaks (0x01): 10D splits
+
+Coordinates within a phext document are calculated using dead reckoning, in exactly the same manner as rows and columns within a typical text document. We just have 9 additional (orthogonal) dimensions to consider. Easy!
