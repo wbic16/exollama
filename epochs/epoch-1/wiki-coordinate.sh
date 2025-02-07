@@ -13,8 +13,8 @@ LAST=$(printf '%d' "'$LAST")
 #echo "First: $FIRST"
 #echo "Length: $INNER"
 #echo "Last: $LAST"
-FIRST=$(($FIRST - 65))
-LAST=$(($LAST - 65))
+FIRST=$(($FIRST - 64))
+LAST=$(($LAST - 64))
 LIBRARY=$FIRST
 SHELF=$INNER
 SERIES=$LAST
@@ -40,14 +40,22 @@ P3F=$(printf '%d' "'$P3F")
 P1T=$(printf '%d' "'$P1T")
 P2T=$(printf '%d' "'$P2T")
 P3T=$(printf '%d' "'$P3T")
-P1F=$(($P1F - 65))
-P2F=$(($P2F - 65))
-P3F=$(($P3F - 65))
-P1T=$(($P1T - 65))
-P2T=$(($P2T - 65))
-P3T=$(($P3T - 65))
+P1F=$(($P1F - 64))
+P2F=$(($P2F - 64))
+P3F=$(($P3F - 64))
+P1T=$(($P1T - 64))
+P2T=$(($P2T - 64))
+P3T=$(($P3T - 64))
 COLLECTION=$(($P1F ^ $P2F ^ $P3F))
 VOLUME=$(($P1L ^ $P2L ^ $P3L))
 BOOK=$(($P1T ^ $P2T ^ $P3T))
+PATCHED=1
+# Ensure we don't produce invalid phext coordinates
+if [ $LIBRARY -lt 1 ]; then LIBRARY=1; fi
+if [ $SHELF -lt 1 ]; then SHELF=1; fi
+if [ $SERIES -lt 1 ]; then SERIES=1; fi
+if [ $COLLECTION -lt 1 ]; then COLLECTION=1; fi
+if [ $VOLUME -lt 1 ]; then VOLUME=1; fi
+if [ $BOOK -lt 1 ]; then BOOK=1; fi
 echo "$LIBRARY.$SHELF.$SERIES/$COLLECTION.$VOLUME.$BOOK/1.1.1"
 exit 0
