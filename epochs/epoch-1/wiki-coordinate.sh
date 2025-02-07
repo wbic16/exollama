@@ -13,6 +13,8 @@ LAST=$(printf '%d' "'$LAST")
 #echo "First: $FIRST"
 #echo "Length: $INNER"
 #echo "Last: $LAST"
+FIRST=$(($FIRST - 65))
+LAST=$(($LAST - 65))
 LIBRARY=$FIRST
 SHELF=$INNER
 SERIES=$LAST
@@ -38,6 +40,12 @@ P3F=$(printf '%d' "'$P3F")
 P1T=$(printf '%d' "'$P1T")
 P2T=$(printf '%d' "'$P2T")
 P3T=$(printf '%d' "'$P3T")
+P1F=$(($P1F - 65))
+P2F=$(($P2F - 65))
+P3F=$(($P3F - 65))
+P1T=$(($P1T - 65))
+P2T=$(($P2T - 65))
+P3T=$(($P3T - 65))
 COLLECTION=$(($P1F ^ $P2F ^ $P3F))
 VOLUME=$(($P1L ^ $P2L ^ $P3L))
 BOOK=$(($P1T ^ $P2T ^ $P3T))
