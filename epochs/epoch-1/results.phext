@@ -33,4 +33,5 @@ February 1: SQ v0.3.2 - auto-recover from .sq issues when issuing a viable boots
 February 2: thunderbolt links between nodes (40 Gbit/sec)
 February 3: Cluster status snapshot
 February 4: Added job-ratings.sh
-February 5: Added wiki-coordinate.sh
+February 5: Added wiki-coordinate.sh (wikipedia.phext)
+February 6: Added check-article.sh (wikipedia.phext)
