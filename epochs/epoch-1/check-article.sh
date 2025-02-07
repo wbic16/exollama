@@ -13,7 +13,10 @@ fi
 FOUND=`sq toc |grep -c $COORDINATE`
 if [ $FOUND -eq 0 ]; then
   echo "No entry for '$ARTICLE' => $COORDINATE found."
+  echo "$ARTICLE" >$FILE
+  echo "" >>$FILE
+  echo "" >>$FILE
+  echo "Initialized $FILE."
 else
   sq pull $COORDINATE $FILE
-  echo "Fetched $ARTICLE into $FILE."
 fi
