@@ -1,6 +1,6 @@
 # exollama
 
-Exollama provides a collection of local inference tools, designed to help bootstrap AGI on a budget.
+Exollama provides a collection of local inference tools, designed to help bootstrap AGI on a budget ($1K).
 
 * llama2.cu allows you to target an NVidia GPU using a plain C project (the genesis of this project)
 * ollama allows you to target either CPU or GPU resources
@@ -8,7 +8,7 @@ Exollama provides a collection of local inference tools, designed to help bootst
 
 ## shell scripts
 
-Scripts installed during deployment come from the root directory of this repo, and from epochs/epoch-1. A summary of each script is given below.
+A summary of each script deployed during setup is given below.
 
 * agent-name.sh: Displays the name of a given agent identified by ID
 * agent-step.sh: Runs the next agent step for a given agent ID
@@ -54,14 +54,14 @@ Scripts installed during deployment come from the root directory of this repo, a
 * update-pod-manifest.sh: archives the current pod manifest report
 * verify-agent.sh: Tests whether or not a given agent exists in the agent store
 
-## A Special Fork
+## 4-bit Quantized Models
 
 Simple and fast Pure Cuda inference for 4-bit [AWQ](https://github.com/mit-han-lab/llm-awq) quantized models.
 
 Based on [llama2.c](https://github.com/karpathy/llama2.c)
 Forked from [llama2_q4.cu](https://github.com/ankan-ban/llama_cu_awq)
 
-## One-Step Setup
+## Setup
 
 The instructions below still apply, but you can execute all of them in one shot with `setup.sh` on Ubuntu 24.04 LTS with an NVidia GPU. AMD support via rocm is a work-in-progress.
 
@@ -90,7 +90,7 @@ cd ..
 
 ### ollama integration
 
-You can also run ollama for reference using the scripts noted below.
+You can quickly run inference requests via ollama using the scripts below.
 
 * dq.sh: deepseek-r1:1.5b
 * ds.sh: deepseek-r1:8b
@@ -103,7 +103,7 @@ You can also run ollama for reference using the scripts noted below.
 
 ## Run
 
-The simpler way is to download a pre-converted model from Huggingface, but you can also do all the steps
+The simpler way is to download a pre-converted model from Huggingface, but you can also prepare your own weights.
 
 ### Using Huggingface
 
@@ -148,7 +148,7 @@ cd ..
 Note: the last argument of weight_packer is used to indicate whether the awq weights are using old packing format (that need repacking). If you use latest AWQ repo from github, it will generate weights in new packing format. The weights at https://huggingface.co/abhinavkulkarni/ are still using old format so we are setting the param to 1 above.
 
 
-### Converting yourself
+### Repacking
 
 1. First generate AWQ int-4 quantized weights following steps in [llm-awq](https://github.com/mit-han-lab/llm-awq)
 2. Convert AWQ weights into individual weight binary files using convert_awq_to_bin.py
