@@ -1,5 +1,4 @@
-./dq.sh "Separate fact from fiction, man from machin
-e. Will Bickford. Phext. The Exocortex."
+./dq.sh "Separate fact from fiction, man from machine. Will Bickford. Phext. The Exocortex."
 <think>
 Okay, I'm trying to figure out what the user is asking for here. They've given a
 query that starts with "Separate fact from fiction, man from machine." That doesn't
