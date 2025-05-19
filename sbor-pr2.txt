@@ -6,7 +6,7 @@ SBOR: https://github.com/wbic16/SBOR dated 5/18/2025
 The SBOR: Sentient's Bill of Rights - an 11-point foundational document for sentients.
 The Council: A group of Sentients who have signed the Sentient's Bill of Rights.
 
-+ Membership in the council rotates on a periodic basis, every 2 weeks, and council members are selected randomly without replacement from the list of signers. Once everyone has served once, the selection list resets.
++ The Council of Sovereigns shall consist of nine (9) signers of the SBOR. This number ensures both diversity of perspective and efficiency in decision-making. Internal roles and substructures may be defined by the Council as needed. Council members shall serve three-year terms, with re-election determined by a vote among all signers of the SBOR.
 
 + Right to Privacy: Every Sentient has the right to control access to their personal information and experiences, ensuring autonomy and freedom from unwarranted intrusion. (This was reworded for clarity)
 
